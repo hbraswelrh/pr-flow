@@ -32,7 +32,7 @@ Then, click "Create Pull Request" to open the PR. The PR will be reviewed and ei
 
 ## Reviewing a PR 
 
-### :tada:**Case 1:** The proposed content change _should_ be approved.
+### :tada: **Case 1:** The proposed content change _should_ be approved.
 
 #### Scenario 🗯️
 
