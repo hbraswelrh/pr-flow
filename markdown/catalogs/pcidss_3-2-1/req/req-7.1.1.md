@@ -8,6 +8,6 @@ x-trestle-global:
 ## Control Statement
 
 * System components and data resources that each role needs
-  to access for their job function
+to access for their job function
 * Level of privilege required (for example, user, administrator,
-  etc.) for accessing resources.
+etc.) for accessing resources.

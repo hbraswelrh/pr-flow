@@ -8,7 +8,7 @@ x-trestle-global:
 ## Control Statement
 
 * Is performed at least annually and upon significant changes
-  to the environment (for example, acquisition, merger, relocation, etc.),
+to the environment (for example, acquisition, merger, relocation, etc.),
 * Identifies critical assets, threats, and vulnerabilities, and
 * Results in a formal, documented analysis of risk.
 

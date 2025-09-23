@@ -8,8 +8,8 @@ x-trestle-global:
 ## Control Statement
 
 * Limiting data storage amount and retention time to that
-  which is required for legal, regulatory, and/or business requirements
+which is required for legal, regulatory, and/or business requirements
 * Specific retention requirements for cardholder data
 * Processes for secure deletion of data when no longer needed
 * A quarterly process for identifying and securely deleting stored
-  cardholder data that exceeds defined retention.
+cardholder data that exceeds defined retention.

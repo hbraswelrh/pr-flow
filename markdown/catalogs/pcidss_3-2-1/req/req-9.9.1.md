@@ -10,5 +10,5 @@ x-trestle-global:
 The list should include the following:
 * Make, model of device
 * Location of device (for example, the address of the site or facility
-  where the device is located)
+where the device is located)
 * Device serial number or other method of unique identification.

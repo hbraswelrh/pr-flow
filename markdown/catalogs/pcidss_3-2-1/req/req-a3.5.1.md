@@ -8,9 +8,9 @@ x-trestle-global:
 ## Control Statement
 
 * Identification of anomalies or suspicious activity as they
-  occur
+occur
 * Issuance of timely alerts upon detection of suspicious activity
-  or anomaly to responsible personnel
+or anomaly to responsible personnel
 * Response to alerts in accordance with documented response procedures
 
 PCI DSS Reference: Requirements 10, 12

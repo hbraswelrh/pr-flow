@@ -11,5 +11,4 @@ Firewall configurations include:
 * Specific configuration settings are defined for personal firewall software.
 * Personal firewall software is actively running.
 * Personal firewall software is not alterable by users of mobile and/or
-  employee-owned devices.
-
+employee-owned devices.

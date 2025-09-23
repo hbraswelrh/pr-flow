@@ -8,11 +8,11 @@ x-trestle-global:
 ## Control Statement
 
 * Definition of activities for maintaining and monitoring overall
-  PCI DSS compliance, including business-as-usual activities
+PCI DSS compliance, including business-as-usual activities
 * Annual PCI DSS assessment processes
 * Processes for the continuous validation of PCI DSS requirements
-  (for example: daily, weekly, quarterly, etc. as applicable per requirement)
+(for example: daily, weekly, quarterly, etc. as applicable per requirement)
 * A process for performing business- impact analysis to determine potential
-  PCI DSS impacts for strategic business decisions
+PCI DSS impacts for strategic business decisions
 
 PCI DSS Reference: Requirements 1-12

@@ -8,13 +8,13 @@ x-trestle-global:
 ## Control Statement
 
 * Roles, responsibilities, and communication and contact strategies
-  in the event of a compromise including notification of the payment brands, at
-  a minimum
+in the event of a compromise including notification of the payment brands, at
+a minimum
 * Specific incident response procedures
 * Business recovery
-  and continuity procedures
+and continuity procedures
 * Data backup processes
 * Analysis of legal requirements for reporting compromises
 * Coverage and responses of all critical system components
 * Reference or inclusion of incident response procedures from the payment
-  brands.
+brands.

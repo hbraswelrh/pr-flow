@@ -3,7 +3,7 @@
     "uuid": "d2a0b75c-5f68-4518-9c3e-92bae58314cd",
     "metadata": {
       "title": "Catalog for pcidss_3",
-      "last-modified": "2025-09-23T08:55:56.884926+02:00",
+      "last-modified": "2025-09-23T09:26:42.358227+02:00",
       "version": "REPLACE_ME",
       "oscal-version": "1.1.3"
     },
@@ -304,7 +304,7 @@
                       {
                         "id": "req-1.3.7_smt",
                         "name": "statement",
-                        "prose": "Note: Methods to obscure IP addressing may include, but are not limited to:\n* Network Address Translation (NAT)\n* Placing servers containing cardholder data behind proxy servers/firewalls,\n* Removal or filtering of route advertisements for private networks that\n  employ registered addressing,\n* Internal use of RFC1918 address space instead of registered addresses."
+                        "prose": "Note: Methods to obscure IP addressing may include, but are not limited to:\n* Network Address Translation (NAT)\n* Placing servers containing cardholder data behind proxy servers/firewalls,\n* Removal or filtering of route advertisements for private networks that\nemploy registered addressing,\n* Internal use of RFC1918 address space instead of registered addresses."
                       }
                     ]
                   }
@@ -328,7 +328,7 @@
                   {
                     "id": "req-1.4_smt",
                     "name": "statement",
-                    "prose": "Firewall configurations include:\n* Specific configuration settings are defined for personal firewall software.\n* Personal firewall software is actively running.\n* Personal firewall software is not alterable by users of mobile and/or\n  employee-owned devices.\n"
+                    "prose": "Firewall configurations include:\n* Specific configuration settings are defined for personal firewall software.\n* Personal firewall software is actively running.\n* Personal firewall software is not alterable by users of mobile and/or\nemployee-owned devices."
                   }
                 ]
               },
@@ -585,7 +585,7 @@
                   {
                     "id": "req-3.1_smt",
                     "name": "statement",
-                    "prose": "* Limiting data storage amount and retention time to that\n  which is required for legal, regulatory, and/or business requirements\n* Specific retention requirements for cardholder data\n* Processes for secure deletion of data when no longer needed\n* A quarterly process for identifying and securely deleting stored\n  cardholder data that exceeds defined retention."
+                    "prose": "* Limiting data storage amount and retention time to that\nwhich is required for legal, regulatory, and/or business requirements\n* Specific retention requirements for cardholder data\n* Processes for secure deletion of data when no longer needed\n* A quarterly process for identifying and securely deleting stored\ncardholder data that exceeds defined retention."
                   }
                 ]
               },
@@ -730,7 +730,7 @@
                       {
                         "id": "req-3.5.1_smt",
                         "name": "statement",
-                        "prose": "* Details of all algorithms, protocols, and keys used  for the protection of\n  cardholder data, including key strength an d expiry date\n* Description of the key usage for each key\n* Inventory of any HSMs and other SCDs  used for key management"
+                        "prose": "* Details of all algorithms, protocols, and keys used  for the protection of\ncardholder data, including key strength an d expiry date\n* Description of the key usage for each key\n* Inventory of any HSMs and other SCDs  used for key management"
                       }
                     ]
                   },
@@ -767,7 +767,7 @@
                       {
                         "id": "req-3.5.3_smt",
                         "name": "statement",
-                        "prose": "* Encrypted with a key-encrypting key that is at least as strong\n  as the data-encrypting key, and that is stored separately from the\n  data-encrypting key\n* Within a secure cryptographic device (such as a hardware (host)\n  security module (HSM) or PTS- approved point-of-interaction device)\n* As at least two full-length key components or key shares, in accordance with\n  an industry- accepted method\\nNote: It is not required that public keys be stored\n  in one of these forms."
+                        "prose": "* Encrypted with a key-encrypting key that is at least as strong\nas the data-encrypting key, and that is stored separately from the\ndata-encrypting key\n* Within a secure cryptographic device (such as a hardware (host)\nsecurity module (HSM) or PTS- approved point-of-interaction device)\n* As at least two full-length key components or key shares, in accordance with\nan industry- accepted method\\nNote: It is not required that public keys be stored\nin one of these forms."
                       }
                     ]
                   },
@@ -967,7 +967,7 @@
                   {
                     "id": "req-4.1_smt",
                     "name": "statement",
-                    "prose": "* Only trusted keys and certificates are accepted.\n* The protocol in use only supports secure versions or configurations.\n* The encryption strength is appropriate for the encryption methodology in\n  use.\n\nNote: SSL and early TLS are not considered strong cryptography and cannot\nbe used as a security control after June 30, 2016. Prior to this date, existing\nimplementations that use SSL and/or early TLS must have a formal Risk Mitigation\nand Migration Plan in place.\n\nEffective immediately, new implementations must not use SSL or early TLS.\n\nPOS POI terminals (and the SSL/TLS termination points to which they connect)\nthat can be verified as not being susceptible to any known exploits for SSL\nand early TLS may continue using these as a security control after\nJune 30, 2016.\n\nExamples of open, public networks include but are not limited to:\n* The Internet\n* Wireless technologies, including 802.11 and Bluetooth\n* Cellular technologies, for example, Global System for Mobile\n  communications (GSM), Code division multiple access (CDMA)\n* General Packet Radio Service (GPRS)\n* Satellite communications"
+                    "prose": "* Only trusted keys and certificates are accepted.\n* The protocol in use only supports secure versions or configurations.\n* The encryption strength is appropriate for the encryption methodology in\nuse.\n\nNote: SSL and early TLS are not considered strong cryptography and cannot\nbe used as a security control after June 30, 2016. Prior to this date, existing\nimplementations that use SSL and/or early TLS must have a formal Risk Mitigation\nand Migration Plan in place.\n\nEffective immediately, new implementations must not use SSL or early TLS.\n\nPOS POI terminals (and the SSL/TLS termination points to which they connect)\nthat can be verified as not being susceptible to any known exploits for SSL\nand early TLS may continue using these as a security control after\nJune 30, 2016.\n\nExamples of open, public networks include but are not limited to:\n* The Internet\n* Wireless technologies, including 802.11 and Bluetooth\n* Cellular technologies, for example, Global System for Mobile\ncommunications (GSM), Code division multiple access (CDMA)\n* General Packet Radio Service (GPRS)\n* Satellite communications"
                   }
                 ],
                 "controls": [
@@ -1213,7 +1213,7 @@
                       {
                         "id": "req-6.3.2_smt",
                         "name": "statement",
-                        "prose": "* Code changes are reviewed by individuals other than the originating\n  code author, and by individuals knowledgeable about code-review techniques and\n  secure coding practices.\n* Code reviews ensure code is developed according\n  to secure coding guidelines\n* Appropriate corrections are implemented\n  prior to release.\n* Code-review results are reviewed and approved by management prior to release.\n\nNote: This requirement for code reviews applies to all custom code\n(both internal and public-facing), as part of the system development life cycle.\n\nCode reviews can be conducted by knowledgeable internal personnel or third parties.\nPublic-facing web applications are also subject to additional controls,\nto address ongoing threats and vulnerabilities after implementation,\nas defined at PCI DSS Requirement 6.6."
+                        "prose": "* Code changes are reviewed by individuals other than the originating\ncode author, and by individuals knowledgeable about code-review techniques and\nsecure coding practices.\n* Code reviews ensure code is developed according\nto secure coding guidelines\n* Appropriate corrections are implemented\nprior to release.\n* Code-review results are reviewed and approved by management prior to release.\n\nNote: This requirement for code reviews applies to all custom code\n(both internal and public-facing), as part of the system development life cycle.\n\nCode reviews can be conducted by knowledgeable internal personnel or third parties.\nPublic-facing web applications are also subject to additional controls,\nto address ongoing threats and vulnerabilities after implementation,\nas defined at PCI DSS Requirement 6.6."
                       }
                     ]
                   }
@@ -1547,7 +1547,7 @@
                   {
                     "id": "req-6.6_smt",
                     "name": "statement",
-                    "prose": "* Reviewing public-facing web applications via manual or automated\n  application vulnerability security assessment tools or methods, at least annually\n  and after any changes\n\n  Note: This assessment is not the same as the vulnerability\n  scans performed for Requirement 11.2.\n\n* Installing an automated technical solution that detects and prevents\n  web-based attacks (for example, a web- application firewall) in\n  front of public- facing web applications, to continually check all traffic."
+                    "prose": "* Reviewing public-facing web applications via manual or automated\napplication vulnerability security assessment tools or methods, at least annually\nand after any changes\n\nNote: This assessment is not the same as the vulnerability\nscans performed for Requirement 11.2.\n\n* Installing an automated technical solution that detects and prevents\nweb-based attacks (for example, a web- application firewall) in\nfront of public- facing web applications, to continually check all traffic."
                   }
                 ]
               },
@@ -1594,7 +1594,7 @@
                       {
                         "id": "req-7.1.1_smt",
                         "name": "statement",
-                        "prose": "* System components and data resources that each role needs\n  to access for their job function\n* Level of privilege required (for example, user, administrator,\n  etc.) for accessing resources."
+                        "prose": "* System components and data resources that each role needs\nto access for their job function\n* Level of privilege required (for example, user, administrator,\netc.) for accessing resources."
                       }
                     ]
                   },
@@ -2000,7 +2000,7 @@
                   {
                     "id": "req-8.4_smt",
                     "name": "statement",
-                    "prose": "* Guidance on selecting strong authentication credentials\n* Guidance for how users should protect their authentication credentials\n* Instructions not to reuse previously used passwords\n* Instructions to change passwords if there is any suspicion the password\n  could be compromised."
+                    "prose": "* Guidance on selecting strong authentication credentials\n* Guidance for how users should protect their authentication credentials\n* Instructions not to reuse previously used passwords\n* Instructions to change passwords if there is any suspicion the password\ncould be compromised."
                   }
                 ]
               },
@@ -2198,7 +2198,7 @@
                   {
                     "id": "req-9.2_smt",
                     "name": "statement",
-                    "prose": "include:\n* Identifying onsite personnel and visitors (for example, assigning badges)\n* Changes to access requirements\n* Revoking or terminating onsite personnel and expired visitor identification\n  (such as ID badges)."
+                    "prose": "include:\n* Identifying onsite personnel and visitors (for example, assigning badges)\n* Changes to access requirements\n* Revoking or terminating onsite personnel and expired visitor identification\n(such as ID badges)."
                   }
                 ]
               },
@@ -2220,7 +2220,7 @@
                   {
                     "id": "req-9.3_smt",
                     "name": "statement",
-                    "prose": "* Access must be authorized and based on individual job function.\n* Access is revoked immediately upon termination, and all physical access\n  mechanisms, such as keys, access cards, etc., are returned or disabled."
+                    "prose": "* Access must be authorized and based on individual job function.\n* Access is revoked immediately upon termination, and all physical access\nmechanisms, such as keys, access cards, etc., are returned or disabled."
                   }
                 ]
               },
@@ -2459,7 +2459,7 @@
                       {
                         "id": "req-9.9.1_smt",
                         "name": "statement",
-                        "prose": "The list should include the following:\n* Make, model of device\n* Location of device (for example, the address of the site or facility\n  where the device is located)\n* Device serial number or other method of unique identification."
+                        "prose": "The list should include the following:\n* Make, model of device\n* Location of device (for example, the address of the site or facility\nwhere the device is located)\n* Device serial number or other method of unique identification."
                       }
                     ]
                   },
@@ -2503,7 +2503,7 @@
                       {
                         "id": "req-9.9.3_smt",
                         "name": "statement",
-                        "prose": "Training should include the following: * Verify the identity of any third-party persons claiming to be repair\n  or maintenance personnel, prior to granting them access to modify\n  or troubleshoot devices.\n* Do not install, replace, or return devices without verification. * Be aware of suspicious behavior around devices (for example, attempts\n  by unknown persons to unplug or open devices).\n* Report suspicious behavior and indications of device tampering or\n  substitution to appropriate personnel (for example, to a manager or\n  security officer)."
+                        "prose": "Training should include the following: * Verify the identity of any third-party persons claiming to be repair\nor maintenance personnel, prior to granting them access to modify\nor troubleshoot devices.\n* Do not install, replace, or return devices without verification. * Be aware of suspicious behavior around devices (for example, attempts\nby unknown persons to unplug or open devices).\n* Report suspicious behavior and indications of device tampering or\nsubstitution to appropriate personnel (for example, to a manager or\nsecurity officer)."
                       }
                     ]
                   }
@@ -2906,7 +2906,7 @@
                       {
                         "id": "req-10.6.1_smt",
                         "name": "statement",
-                        "prose": "* All security events\n* Logs of all system components that store, process, or transmit CHD and/or SAD\n* Logs of all critical system components\n* Logs of all servers and system components that perform security functions\n  (for example, firewalls, intrusion-detection systems/intrusion-prevention\n  systems (IDS/IPS), authentication servers, e-commerce redirection servers, etc.)."
+                        "prose": "* All security events\n* Logs of all system components that store, process, or transmit CHD and/or SAD\n* Logs of all critical system components\n* Logs of all servers and system components that perform security functions\n(for example, firewalls, intrusion-detection systems/intrusion-prevention\nsystems (IDS/IPS), authentication servers, e-commerce redirection servers, etc.)."
                       }
                     ]
                   },
@@ -3241,7 +3241,7 @@
                   {
                     "id": "req-12.2_smt",
                     "name": "statement",
-                    "prose": "* Is performed at least annually and upon significant changes\n  to the environment (for example, acquisition, merger, relocation, etc.),\n* Identifies critical assets, threats, and vulnerabilities, and\n* Results in a formal, documented analysis of risk.\n\nExamples of risk-assessment methodologies include but are not limited\nto OCTAVE, ISO 27005 and NIST SP 800-30."
+                    "prose": "* Is performed at least annually and upon significant changes\nto the environment (for example, acquisition, merger, relocation, etc.),\n* Identifies critical assets, threats, and vulnerabilities, and\n* Results in a formal, documented analysis of risk.\n\nExamples of risk-assessment methodologies include but are not limited\nto OCTAVE, ISO 27005 and NIST SP 800-30."
                   }
                 ]
               },
@@ -3701,7 +3701,7 @@
                       {
                         "id": "req-12.10.1_smt",
                         "name": "statement",
-                        "prose": "* Roles, responsibilities, and communication and contact strategies\n  in the event of a compromise including notification of the payment brands, at\n  a minimum\n* Specific incident response procedures\n* Business recovery\n  and continuity procedures\n* Data backup processes\n* Analysis of legal requirements for reporting compromises\n* Coverage and responses of all critical system components\n* Reference or inclusion of incident response procedures from the payment\n  brands."
+                        "prose": "* Roles, responsibilities, and communication and contact strategies\nin the event of a compromise including notification of the payment brands, at\na minimum\n* Specific incident response procedures\n* Business recovery\nand continuity procedures\n* Data backup processes\n* Analysis of legal requirements for reporting compromises\n* Coverage and responses of all critical system components\n* Reference or inclusion of incident response procedures from the payment\nbrands."
                       }
                     ]
                   },
@@ -3882,7 +3882,7 @@
                       {
                         "id": "req-a3.1.1_smt",
                         "name": "statement",
-                        "prose": "* Overall accountability for maintaining PCI DSS compliance\n* Defining a charter for a PCI DSS compliance program\n* Providing updates to executive management and board of directors on PCI DSS compliance\n  initiatives and issues, including remediation activities, at least annually\n\nPCI DSS Reference: Requirement 12"
+                        "prose": "* Overall accountability for maintaining PCI DSS compliance\n* Defining a charter for a PCI DSS compliance program\n* Providing updates to executive management and board of directors on PCI DSS compliance\ninitiatives and issues, including remediation activities, at least annually\n\nPCI DSS Reference: Requirement 12"
                       }
                     ]
                   },
@@ -3904,7 +3904,7 @@
                       {
                         "id": "req-a3.1.2_smt",
                         "name": "statement",
-                        "prose": "* Definition of activities for maintaining and monitoring overall\n  PCI DSS compliance, including business-as-usual activities\n* Annual PCI DSS assessment processes\n* Processes for the continuous validation of PCI DSS requirements\n  (for example: daily, weekly, quarterly, etc. as applicable per requirement)\n* A process for performing business- impact analysis to determine potential\n  PCI DSS impacts for strategic business decisions\n\nPCI DSS Reference: Requirements 1-12"
+                        "prose": "* Definition of activities for maintaining and monitoring overall\nPCI DSS compliance, including business-as-usual activities\n* Annual PCI DSS assessment processes\n* Processes for the continuous validation of PCI DSS requirements\n(for example: daily, weekly, quarterly, etc. as applicable per requirement)\n* A process for performing business- impact analysis to determine potential\nPCI DSS impacts for strategic business decisions\n\nPCI DSS Reference: Requirements 1-12"
                       }
                     ]
                   },
@@ -3926,7 +3926,7 @@
                       {
                         "id": "req-a3.1.3_smt",
                         "name": "statement",
-                        "prose": "* Managing PCI DSS business-as-usual activities\n* Managing annual PCI DSS assessments\n* Managing continuous validation of PCI DSS requirements\n  (for example: daily, weekly, quarterly, etc. as applicable per\n  requirement)\n* Managing business-impact analysis to determine potential\n  PCI DSS impacts for strategic business decisions\n\nPCI DSS Reference: Requirement 12"
+                        "prose": "* Managing PCI DSS business-as-usual activities\n* Managing annual PCI DSS assessments\n* Managing continuous validation of PCI DSS requirements\n(for example: daily, weekly, quarterly, etc. as applicable per\nrequirement)\n* Managing business-impact analysis to determine potential\nPCI DSS impacts for strategic business decisions\n\nPCI DSS Reference: Requirement 12"
                       }
                     ]
                   },
@@ -3976,7 +3976,7 @@
                       {
                         "id": "req-a3.2.1_smt",
                         "name": "statement",
-                        "prose": "* Identifying all in-scope networks and system components\n* Identifying all out-of-scope networks and justification for networks\n  being out of scope, including descriptions of all segmentation controls implemented\n* Identifying all connected entities. e.g., third-party entities with\n  access to the cardholder data environment (CDE)\n\nPCI DSS Reference: Scope of PCI DSS Requirements\""
+                        "prose": "* Identifying all in-scope networks and system components\n* Identifying all out-of-scope networks and justification for networks\nbeing out of scope, including descriptions of all segmentation controls implemented\n* Identifying all connected entities. e.g., third-party entities with\naccess to the cardholder data environment (CDE)\n\nPCI DSS Reference: Scope of PCI DSS Requirements\""
                       }
                     ]
                   },
@@ -3998,7 +3998,7 @@
                       {
                         "id": "req-a3.2.2_smt",
                         "name": "statement",
-                        "prose": "* Performing a formal PCI DSS impact assessment\n* Identifying applicable PCI DSS requirements to the system or network\n* Updating PCI DSS scope as appropriate\n* Documented sign-off of the results of the impact assessment by\n  responsible personnel (as defined in A3.1.3)\n\nPCI DSS Reference: Scope of PCI DSS Requirements; Requirements 1-12"
+                        "prose": "* Performing a formal PCI DSS impact assessment\n* Identifying applicable PCI DSS requirements to the system or network\n* Updating PCI DSS scope as appropriate\n* Documented sign-off of the results of the impact assessment by\nresponsible personnel (as defined in A3.1.3)\n\nPCI DSS Reference: Scope of PCI DSS Requirements; Requirements 1-12"
                       }
                     ],
                     "controls": [
@@ -4020,7 +4020,7 @@
                           {
                             "id": "req-a3.2.2.1_smt",
                             "name": "statement",
-                            "prose": "* Network diagram is updated to reflect changes.\n* Systems are configured per configuration standards, with all default\n  passwords changed and unnecessary services disabled.\n* Systems are protected with required controls.\n  e.g., file-integrity monitoring (FIM), anti-virus, patches, audit logging.\n* Verify that sensitive authentication data (SAD) is not stored\n  and that all cardholder data (CHD) storage is documented and incorporated into\n  data-retention policy and procedures\n* New systems are included in the quarterly vulnerability scanning process.\n\nPCI DSS Reference: Scope of PCI DSS Requirements; Requirement 1-12"
+                            "prose": "* Network diagram is updated to reflect changes.\n* Systems are configured per configuration standards, with all default\npasswords changed and unnecessary services disabled.\n* Systems are protected with required controls.\ne.g., file-integrity monitoring (FIM), anti-virus, patches, audit logging.\n* Verify that sensitive authentication data (SAD) is not stored\nand that all cardholder data (CHD) storage is documented and incorporated into\ndata-retention policy and procedures\n* New systems are included in the quarterly vulnerability scanning process.\n\nPCI DSS Reference: Scope of PCI DSS Requirements; Requirement 1-12"
                           }
                         ]
                       }
@@ -4114,7 +4114,7 @@
                           {
                             "id": "req-a3.2.5.2_smt",
                             "name": "statement",
-                            "prose": "* Procedures for determining what to do if clear-text PAN is\n  discovered outside of the CDE, including its retrieval, secure deletion and/or\n  migration into the currently defined CDE, as applicable\n* Procedures for determining how the data ended up outside of the CDE\n* Procedures for remediating data leaks or process gaps that resulted in the data\n  being outside of the CDE\n* Procedures for identifying the source of the data\n* Procedures for identifying whether any track data is stored with the PANs"
+                            "prose": "* Procedures for determining what to do if clear-text PAN is\ndiscovered outside of the CDE, including its retrieval, secure deletion and/or\nmigration into the currently defined CDE, as applicable\n* Procedures for determining how the data ended up outside of the CDE\n* Procedures for remediating data leaks or process gaps that resulted in the data\nbeing outside of the CDE\n* Procedures for identifying the source of the data\n* Procedures for identifying whether any track data is stored with the PANs"
                           }
                         ]
                       }
@@ -4160,7 +4160,7 @@
                           {
                             "id": "req-a3.2.6.1_smt",
                             "name": "statement",
-                            "prose": "Response procedures must include:\n*  Procedures for the timely investigation of alerts by responsible\n   personnel\n*  Procedures for remediating data leaks\\nor process gaps, as\n   necessary, to prevent any data loss"
+                            "prose": "Response procedures must include:\n*  Procedures for the timely investigation of alerts by responsible\npersonnel\n*  Procedures for remediating data leaks\\nor process gaps, as\nnecessary, to prevent any data loss"
                           }
                         ]
                       }
@@ -4212,7 +4212,7 @@
                           {
                             "id": "req-a3.3.1.1_smt",
                             "name": "statement",
-                            "prose": "Processes for responding to failures in security controls must include:\n\n* Restoring security functions\n* Identifying and documenting the duration (date and time start to end)\n  of the security failure\n* Identifying and documenting cause(s) of failure, including root cause,\n  and documenting remediation required to address root cause\n* Identifying and addressing any security issues that arose during the failure\n* Performing a risk assessment to determine whether further actions are\n  required as a result of the security failure\\n\\\n* Implementing controls to prevent cause of failure from reoccurring\n* Resuming monitoring of security controls\n\nPCI DSS Reference: Requirements 1-12"
+                            "prose": "Processes for responding to failures in security controls must include:\n\n* Restoring security functions\n* Identifying and documenting the duration (date and time start to end)\nof the security failure\n* Identifying and documenting cause(s) of failure, including root cause,\nand documenting remediation required to address root cause\n* Identifying and addressing any security issues that arose during the failure\n* Performing a risk assessment to determine whether further actions are\nrequired as a result of the security failure\\n\\\n* Implementing controls to prevent cause of failure from reoccurring\n* Resuming monitoring of security controls\n\nPCI DSS Reference: Requirements 1-12"
                           }
                         ]
                       }
@@ -4258,7 +4258,7 @@
                       {
                         "id": "req-a3.3.3_smt",
                         "name": "statement",
-                        "prose": "Reviews must be performed by personnel assigned to the PCI DSS compliance\\\n  program (as identified in A3.1.3), and include the following:\n\n* Confirmation that all BAU activities (e.g., A3.2.2, A3.2.6,\n  and A3.3.1) are being performed\n* Confirmation that personnel are following security policies and\n  operational procedures (for example, daily log reviews,\n  firewall rule-set reviews, configuration standards for new systems, etc.)\n* Documenting how the reviews were completed, including how all BAU activities\n  were verified as being in place.\n* Collection of documented evidence as required for the annual\n  PCI DSS assessment\n* Review and sign off of results by personnel assigned responsibility for\n  the PCI DSS compliance program (as identified in A3.1.3)\n* Retention of records and documentation for at least 12 months,\n  covering all BAU activities\n\nPCI DSS Reference: Requirements 1-12"
+                        "prose": "Reviews must be performed by personnel assigned to the PCI DSS compliance\\\nprogram (as identified in A3.1.3), and include the following:\n\n* Confirmation that all BAU activities (e.g., A3.2.2, A3.2.6,\nand A3.3.1) are being performed\n* Confirmation that personnel are following security policies and\noperational procedures (for example, daily log reviews,\nfirewall rule-set reviews, configuration standards for new systems, etc.)\n* Documenting how the reviews were completed, including how all BAU activities\nwere verified as being in place.\n* Collection of documented evidence as required for the annual\nPCI DSS assessment\n* Review and sign off of results by personnel assigned responsibility for\nthe PCI DSS compliance program (as identified in A3.1.3)\n* Retention of records and documentation for at least 12 months,\ncovering all BAU activities\n\nPCI DSS Reference: Requirements 1-12"
                       }
                     ]
                   }
@@ -4314,7 +4314,7 @@
                       {
                         "id": "req-a3.5.1_smt",
                         "name": "statement",
-                        "prose": "* Identification of anomalies or suspicious activity as they\n  occur\n* Issuance of timely alerts upon detection of suspicious activity\n  or anomaly to responsible personnel\n* Response to alerts in accordance with documented response procedures\n\nPCI DSS Reference: Requirements 10, 12"
+                        "prose": "* Identification of anomalies or suspicious activity as they\noccur\n* Issuance of timely alerts upon detection of suspicious activity\nor anomaly to responsible personnel\n* Response to alerts in accordance with documented response procedures\n\nPCI DSS Reference: Requirements 10, 12"
                       }
                     ]
                   }

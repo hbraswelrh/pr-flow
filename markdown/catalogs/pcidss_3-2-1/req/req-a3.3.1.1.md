@@ -11,12 +11,12 @@ Processes for responding to failures in security controls must include:
 
 * Restoring security functions
 * Identifying and documenting the duration (date and time start to end)
-  of the security failure
+of the security failure
 * Identifying and documenting cause(s) of failure, including root cause,
-  and documenting remediation required to address root cause
+and documenting remediation required to address root cause
 * Identifying and addressing any security issues that arose during the failure
 * Performing a risk assessment to determine whether further actions are
-  required as a result of the security failure\n\
+required as a result of the security failure\n\
 * Implementing controls to prevent cause of failure from reoccurring
 * Resuming monitoring of security controls
 

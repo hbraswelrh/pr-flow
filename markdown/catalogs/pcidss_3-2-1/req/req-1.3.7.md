@@ -11,5 +11,5 @@ Note: Methods to obscure IP addressing may include, but are not limited to:
 * Network Address Translation (NAT)
 * Placing servers containing cardholder data behind proxy servers/firewalls,
 * Removal or filtering of route advertisements for private networks that
-  employ registered addressing,
+employ registered addressing,
 * Internal use of RFC1918 address space instead of registered addresses.

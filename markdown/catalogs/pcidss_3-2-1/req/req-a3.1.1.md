@@ -10,6 +10,6 @@ x-trestle-global:
 * Overall accountability for maintaining PCI DSS compliance
 * Defining a charter for a PCI DSS compliance program
 * Providing updates to executive management and board of directors on PCI DSS compliance
-  initiatives and issues, including remediation activities, at least annually
+initiatives and issues, including remediation activities, at least annually
 
 PCI DSS Reference: Requirement 12

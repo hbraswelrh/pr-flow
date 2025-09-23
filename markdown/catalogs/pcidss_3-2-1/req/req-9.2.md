@@ -11,4 +11,4 @@ include:
 * Identifying onsite personnel and visitors (for example, assigning badges)
 * Changes to access requirements
 * Revoking or terminating onsite personnel and expired visitor identification
-  (such as ID badges).
+(such as ID badges).

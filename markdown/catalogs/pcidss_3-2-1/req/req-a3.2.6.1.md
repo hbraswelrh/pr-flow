@@ -9,6 +9,6 @@ x-trestle-global:
 
 Response procedures must include:
 *  Procedures for the timely investigation of alerts by responsible
-   personnel
+personnel
 *  Procedures for remediating data leaks\nor process gaps, as
-   necessary, to prevent any data loss
+necessary, to prevent any data loss

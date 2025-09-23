@@ -9,8 +9,8 @@ x-trestle-global:
 
 * Identifying all in-scope networks and system components
 * Identifying all out-of-scope networks and justification for networks
-  being out of scope, including descriptions of all segmentation controls implemented
+being out of scope, including descriptions of all segmentation controls implemented
 * Identifying all connected entities. e.g., third-party entities with
-  access to the cardholder data environment (CDE)
+access to the cardholder data environment (CDE)
 
 PCI DSS Reference: Scope of PCI DSS Requirements"

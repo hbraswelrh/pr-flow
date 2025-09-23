@@ -10,9 +10,9 @@ x-trestle-global:
 * Managing PCI DSS business-as-usual activities
 * Managing annual PCI DSS assessments
 * Managing continuous validation of PCI DSS requirements
-  (for example: daily, weekly, quarterly, etc. as applicable per
-  requirement)
+(for example: daily, weekly, quarterly, etc. as applicable per
+requirement)
 * Managing business-impact analysis to determine potential
-  PCI DSS impacts for strategic business decisions
+PCI DSS impacts for strategic business decisions
 
 PCI DSS Reference: Requirement 12

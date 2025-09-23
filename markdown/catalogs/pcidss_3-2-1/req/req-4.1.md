@@ -10,7 +10,7 @@ x-trestle-global:
 * Only trusted keys and certificates are accepted.
 * The protocol in use only supports secure versions or configurations.
 * The encryption strength is appropriate for the encryption methodology in
-  use.
+use.
 
 Note: SSL and early TLS are not considered strong cryptography and cannot
 be used as a security control after June 30, 2016. Prior to this date, existing
@@ -28,6 +28,6 @@ Examples of open, public networks include but are not limited to:
 * The Internet
 * Wireless technologies, including 802.11 and Bluetooth
 * Cellular technologies, for example, Global System for Mobile
-  communications (GSM), Code division multiple access (CDMA)
+communications (GSM), Code division multiple access (CDMA)
 * General Packet Radio Service (GPRS)
 * Satellite communications

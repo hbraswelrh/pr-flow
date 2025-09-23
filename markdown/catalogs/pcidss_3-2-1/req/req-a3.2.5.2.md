@@ -8,10 +8,10 @@ x-trestle-global:
 ## Control Statement
 
 * Procedures for determining what to do if clear-text PAN is
-  discovered outside of the CDE, including its retrieval, secure deletion and/or
-  migration into the currently defined CDE, as applicable
+discovered outside of the CDE, including its retrieval, secure deletion and/or
+migration into the currently defined CDE, as applicable
 * Procedures for determining how the data ended up outside of the CDE
 * Procedures for remediating data leaks or process gaps that resulted in the data
-  being outside of the CDE
+being outside of the CDE
 * Procedures for identifying the source of the data
 * Procedures for identifying whether any track data is stored with the PANs

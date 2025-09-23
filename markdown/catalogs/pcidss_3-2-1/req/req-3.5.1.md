@@ -8,6 +8,6 @@ x-trestle-global:
 ## Control Statement
 
 * Details of all algorithms, protocols, and keys used  for the protection of
-  cardholder data, including key strength an d expiry date
+cardholder data, including key strength an d expiry date
 * Description of the key usage for each key
 * Inventory of any HSMs and other SCDs  used for key management

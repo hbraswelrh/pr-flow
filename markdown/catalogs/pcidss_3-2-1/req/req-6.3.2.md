@@ -8,12 +8,12 @@ x-trestle-global:
 ## Control Statement
 
 * Code changes are reviewed by individuals other than the originating
-  code author, and by individuals knowledgeable about code-review techniques and
-  secure coding practices.
+code author, and by individuals knowledgeable about code-review techniques and
+secure coding practices.
 * Code reviews ensure code is developed according
-  to secure coding guidelines
+to secure coding guidelines
 * Appropriate corrections are implemented
-  prior to release.
+prior to release.
 * Code-review results are reviewed and approved by management prior to release.
 
 Note: This requirement for code reviews applies to all custom code

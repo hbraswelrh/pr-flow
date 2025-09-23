@@ -11,4 +11,4 @@ x-trestle-global:
 * Guidance for how users should protect their authentication credentials
 * Instructions not to reuse previously used passwords
 * Instructions to change passwords if there is any suspicion the password
-  could be compromised.
+could be compromised.

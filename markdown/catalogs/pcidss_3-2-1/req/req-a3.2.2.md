@@ -11,6 +11,6 @@ x-trestle-global:
 * Identifying applicable PCI DSS requirements to the system or network
 * Updating PCI DSS scope as appropriate
 * Documented sign-off of the results of the impact assessment by
-  responsible personnel (as defined in A3.1.3)
+responsible personnel (as defined in A3.1.3)
 
 PCI DSS Reference: Scope of PCI DSS Requirements; Requirements 1-12

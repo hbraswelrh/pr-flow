@@ -9,4 +9,4 @@ x-trestle-global:
 
 * Access must be authorized and based on individual job function.
 * Access is revoked immediately upon termination, and all physical access
-  mechanisms, such as keys, access cards, etc., are returned or disabled.
+mechanisms, such as keys, access cards, etc., are returned or disabled.
