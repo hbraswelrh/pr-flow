@@ -10,7 +10,6 @@
 PCI-DSS Req 8.3.6 [PDF](https://www.commerce.uwo.ca/pdf/PCI-DSS-v4_0.pdf)
 
 
-
 #### Example ComplianceAsCode/content
 
 The id 8.3.6 is referenced in the ComplianceAsCode/content control file for PCIDSS. 
@@ -58,15 +57,30 @@ The id 8.3.6 is referenced in the ComplianceAsCode/content control file for PCID
 #### Example OSCAL Component Definition 
 
 ```json
-     {
-                "uuid": "16f5919d-c282-4379-93cb-cf386cdaaf3f",
-                "control-id": "pcidss_4_8-6.3",
-                "description": "Related to requirements 8.3.6 and 8.3.9.",
+      {
+                "uuid": "bbdcd591-aac1-4343-9d2b-3f8beb3a9437",
+                "control-id": "pcidss_4_8-3.6",
+                "description": "This requirement is not intended to apply to:\n- User accounts on point-of-sale terminals that have access to only one card number at a\ntime to facilitate a single transaction (such as IDs used by cashiers on point-of-sale\nterminals).\n- Application or system accounts, which are governed by requirements in section 8.6.",
                 "props": [
                   {
                     "name": "implementation-status",
                     "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
                     "value": "implemented"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "accounts_password_pam_dcredit"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "accounts_password_pam_lcredit"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "accounts_password_pam_minlen"
                   }
                 ]
               },
@@ -75,16 +89,33 @@ The id 8.3.6 is referenced in the ComplianceAsCode/content control file for PCID
 
 ```json
 
-      {
-                "uuid": "8ce094c3-6a88-4ddd-b0b7-315001dc81cd",
-                "control-id": "pcidss_4_8-6.3",
-                "description": "Related to requirements 8.3.6 and 8.3.9.",
+  {
+                "uuid": "b0ea6309-17e4-47aa-b0df-5707d6df0891",
+                "control-id": "pcidss_4_8-3.6",
+                "description": "This requirement is not intended to apply to:\n- User accounts on point-of-sale terminals that have access to only one card number at a\ntime to facilitate a single transaction (such as IDs used by cashiers on point-of-sale\nterminals).\n- Application or system accounts, which are governed by requirements in section 8.6.",
                 "props": [
                   {
                     "name": "implementation-status",
                     "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
-                    "value": "implemented" # Change this to "not-implemented"
+                    "value": "implemented"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "accounts_password_pam_dcredit"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "accounts_password_pam_lcredit"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "accounts_password_pam_minlen"
                   }
                 ]
               },
 ```
+
+Rules in Markdown Component Definition
