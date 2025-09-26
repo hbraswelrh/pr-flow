@@ -1,8 +1,19 @@
 # pr-flow
 
-This repository serves as a bank of example materials for practicing the process of Openining a Pull Request, Reviewing a Pull Request, and merging changes to the `main` branch. 
+This repo is a **hands-on sandbox** for practicing the full Pull Request flow:
+1. create a branch, 2. propose changes via PR, 3. review, 4. merge.
 
-## Review the concept of branching
+## What you’ll do (check as you go)
+
+- [ ] Read the branching refresher  
+- [ ] Create branch example `pci-dss-v4.0.1`  
+- [ ] Update Markdown for OSCAL Component Definitions  
+- [ ] Commit with a descriptive message  
+- [ ] Open a PR against `main`  
+- [ ] Review a PR (approve or request changes)  
+- [ ] Merge once approved
+
+## Branching refresher
 
 The `main` branch is the source of truth. The content merged to `main` must be reviewed and approved. 
 
@@ -16,19 +27,23 @@ The version of PCI DSS has recently been updated. The existing content in the `m
 
 #### Action
 
-Create a new branch from `main` and name it `pci-dss-v4.0.1`. The new branch will have the existing content from `main` and will be used to update the existing content of `pci-dss-v3.2.1` (via Pull Request).
+Create a new branch from `main` and name it `pci-dss-v4.0.1`. This new branch will have the existing content from `main`. 
+[![Create branch in GitHub](markdown/images/step-1-create-a-branch-with-proper-naming.png)](markdown/images/step-1-create-a-branch-with-proper-naming.png)
+Use this branch to update the existing content of `pci-dss-v3.2.1` (via Pull Request).
 
 ### Update the Markdown of an OSCAL Component Definition
 
-Update the Markdown of Component Definitions for `pci-dss-v4.0.1` to reflect the latest version of PCI DSS. Then, commit those changes to the new branch `pci-dss-v4.0.1`. Ensure that you use a descriptive commit message.
+Update the Markdown of Component Definitions for `pci-dss-v4.0.1` to reflect the latest version of PCI DSS.
+[![Add or edit changes in GitHub](markdown/images/step-2-add-or-edit-changes.png)](markdown/images/step-2-add-or-edit-changes.png)
+Then, commit those changes to the new branch `pci-dss-v4.0.1`. Ensure that you use a descriptive commit message.
+[![Pull Request body in GitHub](markdown/images/step-3-add-desc-commit-changes.png)](markdown/images/step-3-add-desc-commit-changes.png)
 
 ## Opening a PR 
 
-To open a Pull Request, reference Step 2 of the `creme-brulee` GitHub course. The PR should be opened against the `main` branch and the changes will be shown as from the `pci-dss-v4.0.1` branch.
-
-The Pull Request body should include a description of the changes being proposed and any relevant documentation in the "Review Hints" section.
+To open a Pull Request, reference Step 2 of the [ComplyTime Skills Discovery GitHub course][creme-brulee]. The PR should be opened against the `main` branch and the changes will be shown as from the `pci-dss-v4.0.1` branch. The Pull Request body should include a description of the changes being proposed and any relevant documentation in the "Review Hints" section.
 
 Then, click "Create Pull Request" to open the PR. The PR will be reviewed and either approved or rejected.
+[![Open a Pull Request in GitHub](markdown/images/step-4-add-pr-desc.png)](markdown/images/step-4-add-pr-desc.png)
 
 ## Reviewing a PR 
 
@@ -36,7 +51,9 @@ Then, click "Create Pull Request" to open the PR. The PR will be reviewed and ei
 
 #### Scenario 🗯️
 
-The version of PCI DSS has recently been updated. The existing content in the `main` branch is out-of-date, but you need to update the content to reflect the latest version of PCI DSS. The branch `pci-dss-v4.0.1` has been created and the changes have been proposed in a Pull Request. The changes have correctly addressed the version change. The next step would be for the reviewer to submit a review with an explicit approval "LGTM."
+The version of PCI DSS has recently been updated. The existing content in the `main` branch is out-of-date, but you need to update the content to reflect the latest version of PCI DSS. The branch `pci-dss-v4.0.1` has been created and the changes have been proposed in a Pull Request.
+[![Screenshot of a PR in GitHub](markdown/images/step-4-pr-in-review.png)](markdown/images/step-4-pr-in-review.png)
+The changes have correctly addressed the version change. The next step would be for the reviewer to submit a review with an explicit approval "LGTM."
 
 #### When to Approve
 
@@ -68,8 +85,9 @@ Use the "Request Changes" feature in the PR review. This action alerts the autho
 
 The author must address the feedback and then request a re-review by leaving a new comment on the PR. The PR cannot be merged until it receives the required approvals after the revisions have been made.
 
+[creme-brulee]: https://github.com/complytime/creme-brulee
 ## Resources
 
-* [ComplyTime Skills Discovery Course creme-brulee](https://github.com/complytime/creme-brulee)
+* [creme-brulee]
 * [OSCAL Content Repository](https://github.com/ComplianceAsCode/oscal-content)
 * [Creating a Pull Request](https://docs.github.com/fr/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
