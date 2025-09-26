@@ -30,6 +30,10 @@ ______________________________________________________________________
 
 <!-- Add control implementation description here for control: pcidss_4_8-3.6 -->
 
+The policy for passwords across systems are initially set to reject passwords that are not meeting the minimum number of characters. 
+
+Implemented through checks and a password manager.
+
 ### Rules:
 
   - rule-pcidss_4_8-3.6
