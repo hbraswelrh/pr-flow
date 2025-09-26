@@ -18,11 +18,14 @@ ______________________________________________________________________
 
 ## What is the solution and how is it implemented?
 
+implemented 
+
 <!-- For implementation status enter one of: implemented, partial, planned, alternative, not-applicable -->
 
 <!-- Note that the list of rules under ### Rules: is read-only and changes will not be captured after assembly to JSON -->
 
 <!-- Add control implementation description here for control: pcidss_4_1-1.1 -->
+This control was implemented by ...
 
 ### Rules:
 
