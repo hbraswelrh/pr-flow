@@ -1,8 +1,9 @@
 # Description
 
-_Insert description for reviewers here_
+_Insert description for reviewers to reference here_
 
 ## Related Issues
+_Include any related issues for the Component Definition authoring_
 
 ## Review Hints
 
