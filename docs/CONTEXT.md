@@ -1,14 +1,18 @@
 # Context for PCI-DSS Example 
 
+_Follow the same guidelines for the other examples in this repository._
+
+<img alt="img_1.png" src="img_1.png" height="200" width="250">
+
 ## Expectations
 
 Authors and Reviewers should be familiar with the PCI-DSS requirements. Rules within the Component Definition are directly mapped to the PCI-DSS requirements.
 
 If you are not familiar with the PCI-DSS requirements, please review the [PCI-DSS Requirements](https://www.commerce.uwo.ca/pdf/PCI-DSS-v4_0.pdf) and contact the Product Engineers to better understand the rules that map to certain criteria within PCI-DSS.
 
-### Where to find the PCI-DSS Requirements as Code
+### Where to find the PCI-DSS Requirements _as Code_
 
-Rules can be updated to reflect the latest PCI-DSS requirements.
+Rules can be updated to reflect the latest PCI-DSS requirements. The Component Definition can be updated to reflect a change in title, description, or contextual information.
 
 #### Control file
 

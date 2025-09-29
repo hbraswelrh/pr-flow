@@ -23,7 +23,7 @@ Edit a component definition for NAME-changed-item on your branch `feat/NAME-chan
 
 ## Open a Pull Request
 
-After making changes to the Markdown Component Definition, the yellow banner should pop-up that indicates "`feat/NAME-changed-item` recently pushed changes." Once this bannear appears, click Compare & Pull Request. This action will have a pre-populated template that allows you to update the context of your changes.   
+After making changes to the Markdown Component Definition, the yellow banner should pop-up that indicates `feat/NAME-changed-item` recently pushed changes." Once this bannear appears, click Compare & Pull Request. This action will have a pre-populated template that allows you to update the context of your changes.   
 
 ### Assign Reviewers for PR 
 
