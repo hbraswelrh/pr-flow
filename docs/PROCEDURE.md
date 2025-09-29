@@ -17,7 +17,7 @@ The branching semantics that align with this source should be followed when crea
 
 ## Edit a Component Definition in Markdown 
 
-Edit a component definiton for NAME-changed-item on your branch `feat/NAME-changed-item`. Common changes include updating the control implementation description, addressing evidence that should be included as verbiage on the description.  
+Edit a component definition for NAME-changed-item on your branch `feat/NAME-changed-item`. Common changes include updating the control implementation description, addressing evidence that should be included as verbiage on the description.  
 
 ### Control Implementation
 
@@ -51,16 +51,16 @@ Choose the Approve Changes option and comment "LGTM." (looks good to me). Feel f
 
 ### Requesting Changes on a Pull Request
 
-In the case of changes being made to a Component Definition that are inaccurate, gramatically incorrect, or anything that could be potentially threatening to the credibility of the source, you must request changes on the Pull Request. 
+In the case of changes being made to a Component Definition that are inaccurate, grammatically incorrect, or anything that could be potentially threatening to the credibility of the source, you must request changes on the Pull Request. 
 
 #### How to Request Changes
 
-To request changes, simply navigate to the "Files Changed" tab on the Pull Request body and Click "Start a Review." 
+To request changes, navigate to the "Files Changed" tab on the Pull Request body and Click "Start a Review." 
 
 From there, you can change specific lines in the changed file if the errors are minimal. Otherwise, leaving a review comment and selecting "Request Changes" will require the user to perform a self-review and update any inaccuracies in their Pull Request. 
 
 #### Re-review Required after Requesting Changes
 
-Once the "Request Changes" review  is made, the user that opened the Pull Request must make those changes or re-evaluate their approach and commit those fixes. Only then will the review be able to "re-review" the changes made to the Pull Request. 
+Once the "Request Changes" review is made, the user that opened the Pull Request must make those changes or re-evaluate their approach and commit those fixes. Only then will the review be able to "re-review" the changes made to the Pull Request. 
 
 If the Pull Request abides by the Deliverables documented in the GitHub Issue that is attached to the PR body, then the contents can be explicitly approved and will again require the "Approve Changes" indication and the "LGTM." comment.

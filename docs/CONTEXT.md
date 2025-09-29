@@ -1,5 +1,10 @@
 # Context for PCI-DSS Example 
 
+## Expectations
+
+The authors should be familiar with the PCI-DSS requirements. Authors and Reviewers should be familiar with the rules within the Component Definition.
+
+If you are not familiar with the PCI-DSS requirements, please review the [PCI-DSS Requirements](https://www.commerce.uwo.ca/pdf/PCI-DSS-v4_0.pdf) and contact the Product Engineers to better understand the rules that map to certain criteria within PCI-DSS.
 
 ## Where to find the Markdown Component Definition
 
@@ -12,7 +17,7 @@ PCI-DSS Req 8.3.6 [PDF](https://www.commerce.uwo.ca/pdf/PCI-DSS-v4_0.pdf)
 
 #### Example ComplianceAsCode/content
 
-The id 8.3.6 is referenced in the ComplianceAsCode/content control file for PCIDSS. 
+The id 8.3.6 is referenced in the [ComplianceAsCode/content](https://github.com/ComplianceAsCode/content/blob/master/controls/pcidss_4.yml) control file for PCIDSS. 
 
 ```yaml
 
