@@ -129,35 +129,22 @@ The id `8.3.6` is referenced in the [ComplianceAsCode/content](https://github.co
 
 ```
 
-```json
+#### Rules in Markdown Component Definition
 
-  {
-                "uuid": "b0ea6309-17e4-47aa-b0df-5707d6df0891",
-                "control-id": "pcidss_4_8-3.6",
-                "description": "This requirement is not intended to apply to:\n- User accounts on point-of-sale terminals that have access to only one card number at a\ntime to facilitate a single transaction (such as IDs used by cashiers on point-of-sale\nterminals).\n- Application or system accounts, which are governed by requirements in section 8.6.",
-                "props": [
-                  {
-                    "name": "implementation-status",
-                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
-                    "value": "implemented"
-                  },
-                  {
-                    "name": "Rule_Id",
-                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
-                    "value": "accounts_password_pam_dcredit"
-                  },
-                  {
-                    "name": "Rule_Id",
-                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
-                    "value": "accounts_password_pam_lcredit"
-                  },
-                  {
-                    "name": "Rule_Id",
-                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
-                    "value": "accounts_password_pam_minlen"
-                  }
-                ]
-              }
-```
+The Markdown Component Definition fields that can be updated are outlined in the "Code" view. 
 
-Rules in Markdown Component Definition
+<img alt="img.png" height="200" src="img/markdown-comp.png" width="400">
+
+#### Code View
+
+Available fields to update include Control Statement, title, implementation status, and control implementation description. 
+
+| Field                              | Description                                                                                           |
+|------------------------------------|-------------------------------------------------------------------------------------------------------|
+| Control Statement                  | The control statement is the context of the Component Definition.                                     |
+| Title                              | The title of the Component Definition.                                                                |
+| Implementation status              | The implementation status is the status of the Component Definition.                                  |
+| Control Implementation Description | The control implementation description is used to update the control within the Component Definition. |
+
+<img alt="img.png" height="300" src="img/code-view.png" width="400">
+
