@@ -2,7 +2,7 @@
 
 _Follow the same guidelines for the other examples in this repository._
 
-<img alt="img_1.png" src="img_1.png" height="300" width="400">
+<img alt="img_1.png" src="img/mapping.png" height="300" width="400">
 
 ## Expectations
 
@@ -41,6 +41,8 @@ The control file includes all controls that will populate the OSCAL Catalog.
 [`./markdown/component-definitions/PCIDSS-Component/software-comp/rhel9-pcidss_4-base/pcidss_4_8/pcidss_4_8-3.6.md`](https://github.com/hbraswelrh/pr-flow/blob/main/markdown/component-definitions/PCIDSS-Component/software-comp/rhel9-pcidss_4-base/pcidss_4_8/pcidss_4_8-3.6.md)
 
 #### PCI-DSS Requirement
+
+<img alt="img.png" height="300" src="img/pci-dss.png" width="450"/>
 
 PCI-DSS Req 8.3.6 [PDF](https://www.commerce.uwo.ca/pdf/PCI-DSS-v4_0.pdf)
 
