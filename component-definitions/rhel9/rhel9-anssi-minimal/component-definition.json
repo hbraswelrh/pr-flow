@@ -1,0 +1,3051 @@
+{
+  "component-definition": {
+    "uuid": "5e2a14d9-cdc9-4476-b4c5-04ab3a945548",
+    "metadata": {
+      "title": "Component definition for rhel9",
+      "last-modified": "2025-09-12T13:12:31.958758+08:00",
+      "version": "1.1",
+      "oscal-version": "1.1.3"
+    },
+    "components": [
+      {
+        "uuid": "cb6a7a59-6b50-40b5-bde5-d60663df7362",
+        "type": "software",
+        "title": "rhel9",
+        "description": "Red Hat Enterprise Linux 9",
+        "props": [
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "enable_authselect",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Enable authselect",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Id_0",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "var_accounts_maximum_age_root",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Description_0",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Maximum age of password in days for the root account",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Value_Alternatives_0",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "{365: 365, 'default': 99999}",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Id_1",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "var_accounts_password_minlen_login_defs",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Description_1",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Minimum number of characters in password",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Value_Alternatives_1",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "{10: 10, 12: 12, 14: 14, 15: 15, 17: 17, 18: 18, 20: 20, 6: 6, 8: 8, 'default': 15}",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Id_2",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "var_accounts_passwords_pam_faillock_deny",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Description_2",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Number of failed login attempts before account lockout",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Value_Alternatives_2",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "{10: 10, 3: 3, 4: 4, 5: 5, 6: 6, 8: 8, 'default': 3}",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Id_3",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "var_accounts_passwords_pam_faillock_fail_interval",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Description_3",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Interval for counting failed login attempts before account lockout",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Value_Alternatives_3",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "{100000000: 100000000, 1800: 1800, 3600: 3600, 86400: 86400, 900: 900, 'default': 900}",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Id_4",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "var_accounts_passwords_pam_faillock_unlock_time",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Description_4",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Seconds before automatic unlocking or permanently locking after excessive failed logins",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Value_Alternatives_4",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "{1800: 1800, 3600: 3600, 600: 600, 604800: 604800, 86400: 86400, 900: 900, 300: 300, 'default': 0, 'never': 0}",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Id_5",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "var_accounts_passwords_pam_tally2_unlock_time",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Description_5",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Seconds before automatic unlocking or permanently locking after excessive failed logins",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Value_Alternatives_5",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "{1800: 1800, 3600: 3600, 600: 600, 604800: 604800, 86400: 86400, 900: 900, 'default': 0, 'never': 0}",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Id_6",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "var_mount_option_proc_hidepid",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Description_6",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "The hidepid mount option is applicable to /proc and is used to control who can access the information in /proc/[pid] directories. The option can have one of the following values: 0: Everybody may access all /proc/[pid] directories. 1: Users may not access files and subdirectories inside any /proc/[pid] directories    but their own. The /proc/[pid] directories themselves remain visible. 2: Same as for mode 1, but in addition the /proc/[pid] directories belonging to other    users become invisible.",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Value_Alternatives_6",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "{'0': '0', 'noaccess': 'noaccess', 'invisible': 'invisible', 1: 1, 2: 2, 'default': 2}",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Id_7",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "var_password_hashing_algorithm",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Description_7",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Specify the system default encryption algorithm for encrypting passwords. Defines the value set as ENCRYPT_METHOD in /etc/login.defs.",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Value_Alternatives_7",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "{'default': 'SHA512', 'SHA512': 'SHA512', 'SHA256': 'SHA256', 'yescrypt': 'YESCRYPT', 'cis_ubuntu2404': 'SHA512|YESCRYPT'}",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Id_8",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "var_password_hashing_algorithm_pam",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Description_8",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Specify the system default encryption algorithm for encrypting passwords. Defines the hashing algorithm to be used in pam_unix.so.",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Value_Alternatives_8",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "{'default': 'sha512', 'sha512': 'sha512', 'yescrypt': 'yescrypt'}",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Id_9",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "var_password_pam_dcredit",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Description_9",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Minimum number of digits in password",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Value_Alternatives_9",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "{'0': '0', 1: -1, 2: -2, 'default': -1}",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Id_10",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "var_password_pam_lcredit",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Description_10",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Minimum number of lower case in password",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Value_Alternatives_10",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "{'0': '0', 1: -1, 2: -2, 'default': -1}",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Id_11",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "var_password_pam_minclass",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Description_11",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Minimum number of categories of characters that must exist in a password",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Value_Alternatives_11",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "{1: 1, 2: 2, 3: 3, 4: 4, 'default': 3}",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Id_12",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "var_password_pam_minlen",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Description_12",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Minimum number of characters in password",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Value_Alternatives_12",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "{10: 10, 12: 12, 14: 14, 15: 15, 17: 17, 18: 18, 20: 20, 6: 6, 7: 7, 8: 8, 'default': 15}",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Id_13",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "var_password_pam_ocredit",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Description_13",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Minimum number of other (special characters) in password",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Value_Alternatives_13",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "{'0': '0', 1: -1, 2: -2, 'default': -1}",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Id_14",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "var_password_pam_tally2",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Description_14",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Number of failed login attempts",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Value_Alternatives_14",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "{1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 10: 10, 'default': 3}",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Id_15",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "var_password_pam_ucredit",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Description_15",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Minimum number of upper case in password",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Value_Alternatives_15",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "{'0': '0', 1: -1, 2: -2, 'default': -1}",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Id_16",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "var_password_pam_unix_remember",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Description_16",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "The last n passwords for each user are saved in <tt>/etc/security/opasswd</tt> in order to force password change history and keep the user from alternating between the same password too frequently.",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Value_Alternatives_16",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "{'0': '0', 10: 10, 24: 24, 2: 2, 4: 4, 5: 5, 'default': 5}",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Id_17",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "var_password_pam_unix_rounds",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Description_17",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Specify the number of rounds for the system password encryption algorithm. Defines the value set in <tt>/etc/pam.d/system-auth</tt> and <tt>/etc/pam.d/password-auth</tt>",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Value_Alternatives_17",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "{'default': 5000, 5000: 5000, 65536: 65536, 100000: 100000, 11: 11, 5: 5}",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "accounts_password_set_max_life_root",
+            "remarks": "rule_set_01"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Set Root Account Password Maximum Age",
+            "remarks": "rule_set_01"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "accounts_password_pam_minlen",
+            "remarks": "rule_set_02"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure PAM Enforces Password Requirements - Minimum Length",
+            "remarks": "rule_set_02"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "accounts_password_minlen_login_defs",
+            "remarks": "rule_set_03"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Set Password Minimum Length in login.defs",
+            "remarks": "rule_set_03"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "accounts_password_pam_ocredit",
+            "remarks": "rule_set_04"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure PAM Enforces Password Requirements - Minimum Special Characters",
+            "remarks": "rule_set_04"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "accounts_password_pam_dcredit",
+            "remarks": "rule_set_05"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure PAM Enforces Password Requirements - Minimum Digit Characters",
+            "remarks": "rule_set_05"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "accounts_password_pam_ucredit",
+            "remarks": "rule_set_06"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure PAM Enforces Password Requirements - Minimum Uppercase Characters",
+            "remarks": "rule_set_06"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "accounts_password_pam_lcredit",
+            "remarks": "rule_set_07"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure PAM Enforces Password Requirements - Minimum Lowercase Characters",
+            "remarks": "rule_set_07"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "accounts_passwords_pam_faillock_interval",
+            "remarks": "rule_set_08"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Set Interval For Counting Failed Password Attempts",
+            "remarks": "rule_set_08"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "accounts_passwords_pam_faillock_deny",
+            "remarks": "rule_set_09"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Lock Accounts After Failed Password Attempts",
+            "remarks": "rule_set_09"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "accounts_passwords_pam_faillock_deny_root",
+            "remarks": "rule_set_10"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Configure the root Account for Failed Password Attempts",
+            "remarks": "rule_set_10"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "accounts_passwords_pam_faillock_unlock_time",
+            "remarks": "rule_set_11"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Set Lockout Time for Failed Password Attempts",
+            "remarks": "rule_set_11"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "accounts_password_pam_unix_remember",
+            "remarks": "rule_set_12"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Limit Password Reuse",
+            "remarks": "rule_set_12"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "file_permissions_ungroupowned",
+            "remarks": "rule_set_13"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure All Files Are Owned by a Group",
+            "remarks": "rule_set_13"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "no_files_unowned_by_user",
+            "remarks": "rule_set_14"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure All Files Are Owned by a User",
+            "remarks": "rule_set_14"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "dir_perms_world_writable_sticky_bits",
+            "remarks": "rule_set_15"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Verify that All World-Writable Directories Have Sticky Bits Set",
+            "remarks": "rule_set_15"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "dir_perms_world_writable_root_owned",
+            "remarks": "rule_set_16"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure All World-Writable Directories Are Owned by root User",
+            "remarks": "rule_set_16"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "file_permissions_unauthorized_world_writable",
+            "remarks": "rule_set_17"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure No World-Writable Files Exist",
+            "remarks": "rule_set_17"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "file_permissions_unauthorized_suid",
+            "remarks": "rule_set_18"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure All SUID Executables Are Authorized",
+            "remarks": "rule_set_18"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "file_permissions_unauthorized_sgid",
+            "remarks": "rule_set_19"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure All SGID Executables Are Authorized",
+            "remarks": "rule_set_19"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "ensure_gpgcheck_never_disabled",
+            "remarks": "rule_set_20"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure gpgcheck Enabled for All dnf Package Repositories",
+            "remarks": "rule_set_20"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "ensure_gpgcheck_globally_activated",
+            "remarks": "rule_set_21"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure gpgcheck Enabled In Main dnf Configuration",
+            "remarks": "rule_set_21"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "ensure_gpgcheck_local_packages",
+            "remarks": "rule_set_22"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure gpgcheck Enabled for Local Packages",
+            "remarks": "rule_set_22"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "ensure_redhat_gpgkey_installed",
+            "remarks": "rule_set_23"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure Red Hat GPG Key Installed",
+            "remarks": "rule_set_23"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "security_patches_up_to_date",
+            "remarks": "rule_set_24"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure Software Patches Installed",
+            "remarks": "rule_set_24"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "package_dnf-automatic_installed",
+            "remarks": "rule_set_25"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Install dnf-automatic Package",
+            "remarks": "rule_set_25"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "timer_dnf-automatic_enabled",
+            "remarks": "rule_set_26"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Enable dnf-automatic Timer",
+            "remarks": "rule_set_26"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "dnf-automatic_apply_updates",
+            "remarks": "rule_set_27"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Configure dnf-automatic to Install Available Updates Automatically",
+            "remarks": "rule_set_27"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "dnf-automatic_security_updates_only",
+            "remarks": "rule_set_28"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Configure dnf-automatic to Install Only Security Updates",
+            "remarks": "rule_set_28"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "package_dhcp_removed",
+            "remarks": "rule_set_29"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Uninstall DHCP Server Package",
+            "remarks": "rule_set_29"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "package_sendmail_removed",
+            "remarks": "rule_set_30"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Uninstall Sendmail Package",
+            "remarks": "rule_set_30"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "package_telnet_removed",
+            "remarks": "rule_set_31"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Remove telnet Clients",
+            "remarks": "rule_set_31"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "package_telnet-server_removed",
+            "remarks": "rule_set_32"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Uninstall telnet-server Package",
+            "remarks": "rule_set_32"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "package_tftp_removed",
+            "remarks": "rule_set_33"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Remove tftp Daemon",
+            "remarks": "rule_set_33"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "package_tftp-server_removed",
+            "remarks": "rule_set_34"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Uninstall tftp-server Package",
+            "remarks": "rule_set_34"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "set_password_hashing_algorithm_systemauth",
+            "remarks": "rule_set_35"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Set PAM''s Password Hashing Algorithm",
+            "remarks": "rule_set_35"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "accounts_password_pam_unix_rounds_system_auth",
+            "remarks": "rule_set_36"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Set number of Password Hashing Rounds - system-auth",
+            "remarks": "rule_set_36"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "accounts_password_pam_unix_rounds_password_auth",
+            "remarks": "rule_set_37"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Set number of Password Hashing Rounds - password-auth",
+            "remarks": "rule_set_37"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "accounts_password_pam_minclass",
+            "remarks": "rule_set_38"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure PAM Enforces Password Requirements - Minimum Different Categories",
+            "remarks": "rule_set_38"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "accounts_password_pam_retry",
+            "remarks": "rule_set_39"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure PAM Enforces Password Requirements - Authentication Retry Prompts Permitted Per-Session",
+            "remarks": "rule_set_39"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "29d86099-d19f-422b-9a02-8f8f16a87c02",
+            "source": "trestle://profiles/rhel9-anssi-minimal/profile.json",
+            "description": "REPLACE_ME",
+            "props": [
+              {
+                "name": "Framework_Short_Name",
+                "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal",
+                "value": "anssi_bp28_minimal"
+              }
+            ],
+            "set-parameters": [
+              {
+                "param-id": "var_accounts_maximum_age_root",
+                "values": [
+                  "365"
+                ]
+              },
+              {
+                "param-id": "var_accounts_password_minlen_login_defs",
+                "values": [
+                  "15"
+                ]
+              },
+              {
+                "param-id": "var_accounts_passwords_pam_faillock_deny",
+                "values": [
+                  "3"
+                ]
+              },
+              {
+                "param-id": "var_accounts_passwords_pam_faillock_fail_interval",
+                "values": [
+                  "900"
+                ]
+              },
+              {
+                "param-id": "var_accounts_passwords_pam_faillock_unlock_time",
+                "values": [
+                  "900"
+                ]
+              },
+              {
+                "param-id": "var_accounts_passwords_pam_tally2_unlock_time",
+                "values": [
+                  "1800"
+                ]
+              },
+              {
+                "param-id": "var_mount_option_proc_hidepid",
+                "values": [
+                  "invisible"
+                ]
+              },
+              {
+                "param-id": "var_password_hashing_algorithm",
+                "values": [
+                  "SHA512"
+                ]
+              },
+              {
+                "param-id": "var_password_hashing_algorithm_pam",
+                "values": [
+                  "sha512"
+                ]
+              },
+              {
+                "param-id": "var_password_pam_dcredit",
+                "values": [
+                  "1"
+                ]
+              },
+              {
+                "param-id": "var_password_pam_lcredit",
+                "values": [
+                  "1"
+                ]
+              },
+              {
+                "param-id": "var_password_pam_minclass",
+                "values": [
+                  "4"
+                ]
+              },
+              {
+                "param-id": "var_password_pam_minlen",
+                "values": [
+                  "15"
+                ]
+              },
+              {
+                "param-id": "var_password_pam_ocredit",
+                "values": [
+                  "1"
+                ]
+              },
+              {
+                "param-id": "var_password_pam_tally2",
+                "values": [
+                  "5"
+                ]
+              },
+              {
+                "param-id": "var_password_pam_ucredit",
+                "values": [
+                  "1"
+                ]
+              },
+              {
+                "param-id": "var_password_pam_unix_remember",
+                "values": [
+                  "2"
+                ]
+              },
+              {
+                "param-id": "var_password_pam_unix_rounds",
+                "values": [
+                  "65536"
+                ]
+              }
+            ],
+            "implemented-requirements": [
+              {
+                "uuid": "6715aa7c-61f4-4135-811d-36beb873808e",
+                "control-id": "r30",
+                "description": "REPLACE_ME",
+                "props": [
+                  {
+                    "name": "implementation-status",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "alternative",
+                    "remarks": "The definition of unused user accounts is broad. It can include accounts whose owners don't use the system anymore, or users created by services or applications that should not be used. Automation by itself cannot discern which accounts are used or not."
+                  }
+                ]
+              },
+              {
+                "uuid": "cc62342f-94c0-4ca5-bf63-a0d1097265dd",
+                "control-id": "r31",
+                "description": "The rules selected below establish a general password strength baseline of 100 bits, based on the recommendations of the technical note \"Recommandations relatives à l'authentification multifacteur et aux mots de passe\" (https://cyber.gouv.fr/publications/recommandations-relatives-lauthentification-multifacteur-et-aux-mots-de-passe)\nThe baseline should be reviewed and tailored to the system's use case and needs.",
+                "props": [
+                  {
+                    "name": "implementation-status",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "implemented"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "enable_authselect"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "accounts_password_set_max_life_root"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "accounts_password_pam_minlen"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "accounts_password_minlen_login_defs"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "accounts_password_pam_ocredit"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "accounts_password_pam_dcredit"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "accounts_password_pam_ucredit"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "accounts_password_pam_lcredit"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "accounts_passwords_pam_faillock_interval"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "accounts_passwords_pam_faillock_deny"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "accounts_passwords_pam_faillock_deny_root"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "accounts_passwords_pam_faillock_unlock_time"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "accounts_password_pam_unix_remember"
+                  }
+                ]
+              },
+              {
+                "uuid": "6788cfa6-b914-4d2c-a852-4f89a94a7ce1",
+                "control-id": "r53",
+                "description": "REPLACE_ME",
+                "props": [
+                  {
+                    "name": "implementation-status",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "implemented"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "file_permissions_ungroupowned"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "no_files_unowned_by_user"
+                  }
+                ]
+              },
+              {
+                "uuid": "567d0991-29a2-4daf-94f3-a390b4ffa9b4",
+                "control-id": "r54",
+                "description": "REPLACE_ME",
+                "props": [
+                  {
+                    "name": "implementation-status",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "implemented"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "dir_perms_world_writable_sticky_bits"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "dir_perms_world_writable_root_owned"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "file_permissions_unauthorized_world_writable"
+                  }
+                ]
+              },
+              {
+                "uuid": "d4b6d6e7-d619-4137-9ec8-69f0c06c4ddf",
+                "control-id": "r56",
+                "description": "Only programs specifically designed to be used with setuid or setgid bits can have these privilege bits set. This requirement considers apropriate for setuid and setgid bits the binaries that are installed from recognized and authorized repositories (covered in R15). The remediation resets the sticky bit to intended value by vendor/developer, any finding after remediation should be reviewed.",
+                "props": [
+                  {
+                    "name": "implementation-status",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "implemented"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "file_permissions_unauthorized_suid"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "file_permissions_unauthorized_sgid"
+                  }
+                ]
+              },
+              {
+                "uuid": "ad4268aa-0660-4759-aff8-25344b3e7105",
+                "control-id": "r58",
+                "description": "REPLACE_ME",
+                "props": [
+                  {
+                    "name": "implementation-status",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "alternative",
+                    "remarks": "It is not possible to automatically decide in general way if a package is required or not for given system. As a future improvement, there could be rules assisting assessment by listing the installed packages."
+                  }
+                ]
+              },
+              {
+                "uuid": "7a57a4db-f3f5-44d5-8d03-6f83cbd7b21b",
+                "control-id": "r59",
+                "description": "It is not trivial to distinguish an official repository from an unofficial one. We cannot draw conclusions from the repo name or URL of the repo (as they can be arbitrary or behind a proxy). One approach to check the origin of installed packages is to check the signature of the packages. If the public key of a repository is not installed, the repo is not trusted.",
+                "props": [
+                  {
+                    "name": "implementation-status",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "implemented"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "ensure_gpgcheck_never_disabled"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "ensure_gpgcheck_globally_activated"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "ensure_gpgcheck_local_packages"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "ensure_redhat_gpgkey_installed"
+                  }
+                ]
+              },
+              {
+                "uuid": "d27efa1d-876c-4a17-84bf-1e93bfcfd45a",
+                "control-id": "r61",
+                "description": "Check the vendor CVE feed and configure automatic install of security related updates.",
+                "props": [
+                  {
+                    "name": "implementation-status",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "implemented"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "security_patches_up_to_date"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "package_dnf-automatic_installed"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "timer_dnf-automatic_enabled"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "dnf-automatic_apply_updates"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "dnf-automatic_security_updates_only"
+                  }
+                ]
+              },
+              {
+                "uuid": "503d9c03-1816-4af7-a286-124ca22a737c",
+                "control-id": "r62",
+                "description": "REPLACE_ME",
+                "props": [
+                  {
+                    "name": "implementation-status",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "alternative",
+                    "remarks": "Performing a minimal install is a good starting point, but doesn't provide any assurance over any package installed later. Manual review is required to assess if the installed services are minimal. In general, use of obsolete or insecure services is not recommended and we remove some of these in this recommendation."
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "package_dhcp_removed"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "package_sendmail_removed"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "package_telnet_removed"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "package_telnet-server_removed"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "package_tftp_removed"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "package_tftp-server_removed"
+                  }
+                ]
+              },
+              {
+                "uuid": "21876c17-d6b9-49b9-8f38-d7529c6842d0",
+                "control-id": "r68",
+                "description": "The selection of rules doesn't cover the use of hardware devices to protect the passwords.",
+                "props": [
+                  {
+                    "name": "implementation-status",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "implemented"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "set_password_hashing_algorithm_systemauth"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "accounts_password_pam_unix_rounds_system_auth"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "accounts_password_pam_unix_rounds_password_auth"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "accounts_password_pam_minclass"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "accounts_password_pam_minlen"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "accounts_password_pam_retry"
+                  }
+                ]
+              },
+              {
+                "uuid": "763cdcb3-5e27-41d6-99ac-8ac45a7260b7",
+                "control-id": "r80",
+                "description": "REPLACE_ME",
+                "props": [
+                  {
+                    "name": "implementation-status",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "alternative",
+                    "remarks": "Manual review is necessary to decide if the list of resident daemons is minimal. Assisting rules could be created to list sevices listening on the network for manual review."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "b152ffc0-fdaf-43d8-81b7-e107c1c2aad7",
+        "type": "validation",
+        "title": "openscap",
+        "description": "openscap",
+        "props": [
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "enable_authselect",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Enable authselect",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "enable_authselect",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Enable authselect",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Id_0",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "var_accounts_maximum_age_root",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Description_0",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Maximum age of password in days for the root account",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Value_Alternatives_0",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "{365: 365, 'default': 99999}",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Id_1",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "var_accounts_password_minlen_login_defs",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Description_1",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Minimum number of characters in password",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Value_Alternatives_1",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "{10: 10, 12: 12, 14: 14, 15: 15, 17: 17, 18: 18, 20: 20, 6: 6, 8: 8, 'default': 15}",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Id_2",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "var_accounts_passwords_pam_faillock_deny",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Description_2",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Number of failed login attempts before account lockout",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Value_Alternatives_2",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "{10: 10, 3: 3, 4: 4, 5: 5, 6: 6, 8: 8, 'default': 3}",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Id_3",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "var_accounts_passwords_pam_faillock_fail_interval",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Description_3",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Interval for counting failed login attempts before account lockout",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Value_Alternatives_3",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "{100000000: 100000000, 1800: 1800, 3600: 3600, 86400: 86400, 900: 900, 'default': 900}",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Id_4",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "var_accounts_passwords_pam_faillock_unlock_time",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Description_4",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Seconds before automatic unlocking or permanently locking after excessive failed logins",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Value_Alternatives_4",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "{1800: 1800, 3600: 3600, 600: 600, 604800: 604800, 86400: 86400, 900: 900, 300: 300, 'default': 0, 'never': 0}",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Id_5",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "var_accounts_passwords_pam_tally2_unlock_time",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Description_5",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Seconds before automatic unlocking or permanently locking after excessive failed logins",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Value_Alternatives_5",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "{1800: 1800, 3600: 3600, 600: 600, 604800: 604800, 86400: 86400, 900: 900, 'default': 0, 'never': 0}",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Id_6",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "var_mount_option_proc_hidepid",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Description_6",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "The hidepid mount option is applicable to /proc and is used to control who can access the information in /proc/[pid] directories. The option can have one of the following values: 0: Everybody may access all /proc/[pid] directories. 1: Users may not access files and subdirectories inside any /proc/[pid] directories    but their own. The /proc/[pid] directories themselves remain visible. 2: Same as for mode 1, but in addition the /proc/[pid] directories belonging to other    users become invisible.",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Value_Alternatives_6",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "{'0': '0', 'noaccess': 'noaccess', 'invisible': 'invisible', 1: 1, 2: 2, 'default': 2}",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Id_7",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "var_password_hashing_algorithm",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Description_7",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Specify the system default encryption algorithm for encrypting passwords. Defines the value set as ENCRYPT_METHOD in /etc/login.defs.",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Value_Alternatives_7",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "{'default': 'SHA512', 'SHA512': 'SHA512', 'SHA256': 'SHA256', 'yescrypt': 'YESCRYPT', 'cis_ubuntu2404': 'SHA512|YESCRYPT'}",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Id_8",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "var_password_hashing_algorithm_pam",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Description_8",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Specify the system default encryption algorithm for encrypting passwords. Defines the hashing algorithm to be used in pam_unix.so.",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Value_Alternatives_8",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "{'default': 'sha512', 'sha512': 'sha512', 'yescrypt': 'yescrypt'}",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Id_9",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "var_password_pam_dcredit",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Description_9",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Minimum number of digits in password",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Value_Alternatives_9",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "{'0': '0', 1: -1, 2: -2, 'default': -1}",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Id_10",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "var_password_pam_lcredit",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Description_10",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Minimum number of lower case in password",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Value_Alternatives_10",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "{'0': '0', 1: -1, 2: -2, 'default': -1}",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Id_11",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "var_password_pam_minclass",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Description_11",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Minimum number of categories of characters that must exist in a password",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Value_Alternatives_11",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "{1: 1, 2: 2, 3: 3, 4: 4, 'default': 3}",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Id_12",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "var_password_pam_minlen",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Description_12",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Minimum number of characters in password",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Value_Alternatives_12",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "{10: 10, 12: 12, 14: 14, 15: 15, 17: 17, 18: 18, 20: 20, 6: 6, 7: 7, 8: 8, 'default': 15}",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Id_13",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "var_password_pam_ocredit",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Description_13",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Minimum number of other (special characters) in password",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Value_Alternatives_13",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "{'0': '0', 1: -1, 2: -2, 'default': -1}",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Id_14",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "var_password_pam_tally2",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Description_14",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Number of failed login attempts",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Value_Alternatives_14",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "{1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 10: 10, 'default': 3}",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Id_15",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "var_password_pam_ucredit",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Description_15",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Minimum number of upper case in password",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Value_Alternatives_15",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "{'0': '0', 1: -1, 2: -2, 'default': -1}",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Id_16",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "var_password_pam_unix_remember",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Description_16",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "The last n passwords for each user are saved in <tt>/etc/security/opasswd</tt> in order to force password change history and keep the user from alternating between the same password too frequently.",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Value_Alternatives_16",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "{'0': '0', 10: 10, 24: 24, 2: 2, 4: 4, 5: 5, 'default': 5}",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Id_17",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "var_password_pam_unix_rounds",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Description_17",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Specify the number of rounds for the system password encryption algorithm. Defines the value set in <tt>/etc/pam.d/system-auth</tt> and <tt>/etc/pam.d/password-auth</tt>",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Parameter_Value_Alternatives_17",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "{'default': 5000, 5000: 5000, 65536: 65536, 100000: 100000, 11: 11, 5: 5}",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "accounts_password_set_max_life_root",
+            "remarks": "rule_set_01"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Set Root Account Password Maximum Age",
+            "remarks": "rule_set_01"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "accounts_password_set_max_life_root",
+            "remarks": "rule_set_01"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Set Root Account Password Maximum Age",
+            "remarks": "rule_set_01"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "accounts_password_pam_minlen",
+            "remarks": "rule_set_02"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure PAM Enforces Password Requirements - Minimum Length",
+            "remarks": "rule_set_02"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "accounts_password_pam_minlen",
+            "remarks": "rule_set_02"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure PAM Enforces Password Requirements - Minimum Length",
+            "remarks": "rule_set_02"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "accounts_password_minlen_login_defs",
+            "remarks": "rule_set_03"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Set Password Minimum Length in login.defs",
+            "remarks": "rule_set_03"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "accounts_password_minlen_login_defs",
+            "remarks": "rule_set_03"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Set Password Minimum Length in login.defs",
+            "remarks": "rule_set_03"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "accounts_password_pam_ocredit",
+            "remarks": "rule_set_04"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure PAM Enforces Password Requirements - Minimum Special Characters",
+            "remarks": "rule_set_04"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "accounts_password_pam_ocredit",
+            "remarks": "rule_set_04"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure PAM Enforces Password Requirements - Minimum Special Characters",
+            "remarks": "rule_set_04"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "accounts_password_pam_dcredit",
+            "remarks": "rule_set_05"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure PAM Enforces Password Requirements - Minimum Digit Characters",
+            "remarks": "rule_set_05"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "accounts_password_pam_dcredit",
+            "remarks": "rule_set_05"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure PAM Enforces Password Requirements - Minimum Digit Characters",
+            "remarks": "rule_set_05"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "accounts_password_pam_ucredit",
+            "remarks": "rule_set_06"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure PAM Enforces Password Requirements - Minimum Uppercase Characters",
+            "remarks": "rule_set_06"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "accounts_password_pam_ucredit",
+            "remarks": "rule_set_06"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure PAM Enforces Password Requirements - Minimum Uppercase Characters",
+            "remarks": "rule_set_06"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "accounts_password_pam_lcredit",
+            "remarks": "rule_set_07"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure PAM Enforces Password Requirements - Minimum Lowercase Characters",
+            "remarks": "rule_set_07"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "accounts_password_pam_lcredit",
+            "remarks": "rule_set_07"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure PAM Enforces Password Requirements - Minimum Lowercase Characters",
+            "remarks": "rule_set_07"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "accounts_passwords_pam_faillock_interval",
+            "remarks": "rule_set_08"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Set Interval For Counting Failed Password Attempts",
+            "remarks": "rule_set_08"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "accounts_passwords_pam_faillock_interval",
+            "remarks": "rule_set_08"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Set Interval For Counting Failed Password Attempts",
+            "remarks": "rule_set_08"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "accounts_passwords_pam_faillock_deny",
+            "remarks": "rule_set_09"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Lock Accounts After Failed Password Attempts",
+            "remarks": "rule_set_09"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "accounts_passwords_pam_faillock_deny",
+            "remarks": "rule_set_09"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Lock Accounts After Failed Password Attempts",
+            "remarks": "rule_set_09"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "accounts_passwords_pam_faillock_deny_root",
+            "remarks": "rule_set_10"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Configure the root Account for Failed Password Attempts",
+            "remarks": "rule_set_10"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "accounts_passwords_pam_faillock_deny_root",
+            "remarks": "rule_set_10"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Configure the root Account for Failed Password Attempts",
+            "remarks": "rule_set_10"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "accounts_passwords_pam_faillock_unlock_time",
+            "remarks": "rule_set_11"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Set Lockout Time for Failed Password Attempts",
+            "remarks": "rule_set_11"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "accounts_passwords_pam_faillock_unlock_time",
+            "remarks": "rule_set_11"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Set Lockout Time for Failed Password Attempts",
+            "remarks": "rule_set_11"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "accounts_password_pam_unix_remember",
+            "remarks": "rule_set_12"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Limit Password Reuse",
+            "remarks": "rule_set_12"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "accounts_password_pam_unix_remember",
+            "remarks": "rule_set_12"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Limit Password Reuse",
+            "remarks": "rule_set_12"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "file_permissions_ungroupowned",
+            "remarks": "rule_set_13"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure All Files Are Owned by a Group",
+            "remarks": "rule_set_13"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "file_permissions_ungroupowned",
+            "remarks": "rule_set_13"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure All Files Are Owned by a Group",
+            "remarks": "rule_set_13"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "no_files_unowned_by_user",
+            "remarks": "rule_set_14"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure All Files Are Owned by a User",
+            "remarks": "rule_set_14"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "no_files_unowned_by_user",
+            "remarks": "rule_set_14"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure All Files Are Owned by a User",
+            "remarks": "rule_set_14"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "dir_perms_world_writable_sticky_bits",
+            "remarks": "rule_set_15"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Verify that All World-Writable Directories Have Sticky Bits Set",
+            "remarks": "rule_set_15"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "dir_perms_world_writable_sticky_bits",
+            "remarks": "rule_set_15"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Verify that All World-Writable Directories Have Sticky Bits Set",
+            "remarks": "rule_set_15"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "dir_perms_world_writable_root_owned",
+            "remarks": "rule_set_16"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure All World-Writable Directories Are Owned by root User",
+            "remarks": "rule_set_16"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "dir_perms_world_writable_root_owned",
+            "remarks": "rule_set_16"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure All World-Writable Directories Are Owned by root User",
+            "remarks": "rule_set_16"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "file_permissions_unauthorized_world_writable",
+            "remarks": "rule_set_17"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure No World-Writable Files Exist",
+            "remarks": "rule_set_17"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "file_permissions_unauthorized_world_writable",
+            "remarks": "rule_set_17"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure No World-Writable Files Exist",
+            "remarks": "rule_set_17"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "file_permissions_unauthorized_suid",
+            "remarks": "rule_set_18"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure All SUID Executables Are Authorized",
+            "remarks": "rule_set_18"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "file_permissions_unauthorized_suid",
+            "remarks": "rule_set_18"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure All SUID Executables Are Authorized",
+            "remarks": "rule_set_18"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "file_permissions_unauthorized_sgid",
+            "remarks": "rule_set_19"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure All SGID Executables Are Authorized",
+            "remarks": "rule_set_19"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "file_permissions_unauthorized_sgid",
+            "remarks": "rule_set_19"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure All SGID Executables Are Authorized",
+            "remarks": "rule_set_19"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "ensure_gpgcheck_never_disabled",
+            "remarks": "rule_set_20"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure gpgcheck Enabled for All dnf Package Repositories",
+            "remarks": "rule_set_20"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "ensure_gpgcheck_never_disabled",
+            "remarks": "rule_set_20"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure gpgcheck Enabled for All dnf Package Repositories",
+            "remarks": "rule_set_20"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "ensure_gpgcheck_globally_activated",
+            "remarks": "rule_set_21"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure gpgcheck Enabled In Main dnf Configuration",
+            "remarks": "rule_set_21"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "ensure_gpgcheck_globally_activated",
+            "remarks": "rule_set_21"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure gpgcheck Enabled In Main dnf Configuration",
+            "remarks": "rule_set_21"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "ensure_gpgcheck_local_packages",
+            "remarks": "rule_set_22"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure gpgcheck Enabled for Local Packages",
+            "remarks": "rule_set_22"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "ensure_gpgcheck_local_packages",
+            "remarks": "rule_set_22"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure gpgcheck Enabled for Local Packages",
+            "remarks": "rule_set_22"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "ensure_redhat_gpgkey_installed",
+            "remarks": "rule_set_23"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure Red Hat GPG Key Installed",
+            "remarks": "rule_set_23"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "ensure_redhat_gpgkey_installed",
+            "remarks": "rule_set_23"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure Red Hat GPG Key Installed",
+            "remarks": "rule_set_23"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "security_patches_up_to_date",
+            "remarks": "rule_set_24"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure Software Patches Installed",
+            "remarks": "rule_set_24"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "security_patches_up_to_date",
+            "remarks": "rule_set_24"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure Software Patches Installed",
+            "remarks": "rule_set_24"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "package_dnf-automatic_installed",
+            "remarks": "rule_set_25"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Install dnf-automatic Package",
+            "remarks": "rule_set_25"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "package_dnf-automatic_installed",
+            "remarks": "rule_set_25"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Install dnf-automatic Package",
+            "remarks": "rule_set_25"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "timer_dnf-automatic_enabled",
+            "remarks": "rule_set_26"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Enable dnf-automatic Timer",
+            "remarks": "rule_set_26"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "timer_dnf-automatic_enabled",
+            "remarks": "rule_set_26"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Enable dnf-automatic Timer",
+            "remarks": "rule_set_26"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "dnf-automatic_apply_updates",
+            "remarks": "rule_set_27"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Configure dnf-automatic to Install Available Updates Automatically",
+            "remarks": "rule_set_27"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "dnf-automatic_apply_updates",
+            "remarks": "rule_set_27"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Configure dnf-automatic to Install Available Updates Automatically",
+            "remarks": "rule_set_27"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "dnf-automatic_security_updates_only",
+            "remarks": "rule_set_28"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Configure dnf-automatic to Install Only Security Updates",
+            "remarks": "rule_set_28"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "dnf-automatic_security_updates_only",
+            "remarks": "rule_set_28"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Configure dnf-automatic to Install Only Security Updates",
+            "remarks": "rule_set_28"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "package_dhcp_removed",
+            "remarks": "rule_set_29"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Uninstall DHCP Server Package",
+            "remarks": "rule_set_29"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "package_dhcp_removed",
+            "remarks": "rule_set_29"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Uninstall DHCP Server Package",
+            "remarks": "rule_set_29"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "package_sendmail_removed",
+            "remarks": "rule_set_30"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Uninstall Sendmail Package",
+            "remarks": "rule_set_30"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "package_sendmail_removed",
+            "remarks": "rule_set_30"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Uninstall Sendmail Package",
+            "remarks": "rule_set_30"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "package_telnet_removed",
+            "remarks": "rule_set_31"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Remove telnet Clients",
+            "remarks": "rule_set_31"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "package_telnet_removed",
+            "remarks": "rule_set_31"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Remove telnet Clients",
+            "remarks": "rule_set_31"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "package_telnet-server_removed",
+            "remarks": "rule_set_32"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Uninstall telnet-server Package",
+            "remarks": "rule_set_32"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "package_telnet-server_removed",
+            "remarks": "rule_set_32"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Uninstall telnet-server Package",
+            "remarks": "rule_set_32"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "package_tftp_removed",
+            "remarks": "rule_set_33"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Remove tftp Daemon",
+            "remarks": "rule_set_33"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "package_tftp_removed",
+            "remarks": "rule_set_33"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Remove tftp Daemon",
+            "remarks": "rule_set_33"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "package_tftp-server_removed",
+            "remarks": "rule_set_34"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Uninstall tftp-server Package",
+            "remarks": "rule_set_34"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "package_tftp-server_removed",
+            "remarks": "rule_set_34"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Uninstall tftp-server Package",
+            "remarks": "rule_set_34"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "set_password_hashing_algorithm_systemauth",
+            "remarks": "rule_set_35"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Set PAM''s Password Hashing Algorithm",
+            "remarks": "rule_set_35"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "set_password_hashing_algorithm_systemauth",
+            "remarks": "rule_set_35"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Set PAM''s Password Hashing Algorithm",
+            "remarks": "rule_set_35"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "accounts_password_pam_unix_rounds_system_auth",
+            "remarks": "rule_set_36"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Set number of Password Hashing Rounds - system-auth",
+            "remarks": "rule_set_36"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "accounts_password_pam_unix_rounds_system_auth",
+            "remarks": "rule_set_36"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Set number of Password Hashing Rounds - system-auth",
+            "remarks": "rule_set_36"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "accounts_password_pam_unix_rounds_password_auth",
+            "remarks": "rule_set_37"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Set number of Password Hashing Rounds - password-auth",
+            "remarks": "rule_set_37"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "accounts_password_pam_unix_rounds_password_auth",
+            "remarks": "rule_set_37"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Set number of Password Hashing Rounds - password-auth",
+            "remarks": "rule_set_37"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "accounts_password_pam_minclass",
+            "remarks": "rule_set_38"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure PAM Enforces Password Requirements - Minimum Different Categories",
+            "remarks": "rule_set_38"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "accounts_password_pam_minclass",
+            "remarks": "rule_set_38"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure PAM Enforces Password Requirements - Minimum Different Categories",
+            "remarks": "rule_set_38"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "accounts_password_pam_retry",
+            "remarks": "rule_set_39"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure PAM Enforces Password Requirements - Authentication Retry Prompts Permitted Per-Session",
+            "remarks": "rule_set_39"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "accounts_password_pam_retry",
+            "remarks": "rule_set_39"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure PAM Enforces Password Requirements - Authentication Retry Prompts Permitted Per-Session",
+            "remarks": "rule_set_39"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "d649b759-5f91-4e4d-80d6-db1d775d5ba3",
+            "source": "trestle://profiles/rhel9-anssi-minimal/profile.json",
+            "description": "REPLACE_ME",
+            "props": [
+              {
+                "name": "Framework_Short_Name",
+                "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal",
+                "value": "anssi_bp28_minimal"
+              }
+            ],
+            "set-parameters": [
+              {
+                "param-id": "var_accounts_maximum_age_root",
+                "values": [
+                  "365"
+                ]
+              },
+              {
+                "param-id": "var_accounts_password_minlen_login_defs",
+                "values": [
+                  "15"
+                ]
+              },
+              {
+                "param-id": "var_accounts_passwords_pam_faillock_deny",
+                "values": [
+                  "3"
+                ]
+              },
+              {
+                "param-id": "var_accounts_passwords_pam_faillock_fail_interval",
+                "values": [
+                  "900"
+                ]
+              },
+              {
+                "param-id": "var_accounts_passwords_pam_faillock_unlock_time",
+                "values": [
+                  "900"
+                ]
+              },
+              {
+                "param-id": "var_accounts_passwords_pam_tally2_unlock_time",
+                "values": [
+                  "1800"
+                ]
+              },
+              {
+                "param-id": "var_mount_option_proc_hidepid",
+                "values": [
+                  "invisible"
+                ]
+              },
+              {
+                "param-id": "var_password_hashing_algorithm",
+                "values": [
+                  "SHA512"
+                ]
+              },
+              {
+                "param-id": "var_password_hashing_algorithm_pam",
+                "values": [
+                  "sha512"
+                ]
+              },
+              {
+                "param-id": "var_password_pam_dcredit",
+                "values": [
+                  "1"
+                ]
+              },
+              {
+                "param-id": "var_password_pam_lcredit",
+                "values": [
+                  "1"
+                ]
+              },
+              {
+                "param-id": "var_password_pam_minclass",
+                "values": [
+                  "4"
+                ]
+              },
+              {
+                "param-id": "var_password_pam_minlen",
+                "values": [
+                  "15"
+                ]
+              },
+              {
+                "param-id": "var_password_pam_ocredit",
+                "values": [
+                  "1"
+                ]
+              },
+              {
+                "param-id": "var_password_pam_tally2",
+                "values": [
+                  "5"
+                ]
+              },
+              {
+                "param-id": "var_password_pam_ucredit",
+                "values": [
+                  "1"
+                ]
+              },
+              {
+                "param-id": "var_password_pam_unix_remember",
+                "values": [
+                  "2"
+                ]
+              },
+              {
+                "param-id": "var_password_pam_unix_rounds",
+                "values": [
+                  "65536"
+                ]
+              }
+            ],
+            "implemented-requirements": [
+              {
+                "uuid": "30ced20f-abdc-4bcb-932b-4a26d4fa9c2a",
+                "control-id": "r30",
+                "description": "REPLACE_ME",
+                "props": [
+                  {
+                    "name": "implementation-status",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "alternative",
+                    "remarks": "The definition of unused user accounts is broad. It can include accounts whose owners don't use the system anymore, or users created by services or applications that should not be used. Automation by itself cannot discern which accounts are used or not."
+                  }
+                ]
+              },
+              {
+                "uuid": "16677f47-cc87-4f20-ae73-0a9fbb83c45d",
+                "control-id": "r31",
+                "description": "The rules selected below establish a general password strength baseline of 100 bits, based on the recommendations of the technical note \"Recommandations relatives à l'authentification multifacteur et aux mots de passe\" (https://cyber.gouv.fr/publications/recommandations-relatives-lauthentification-multifacteur-et-aux-mots-de-passe)\nThe baseline should be reviewed and tailored to the system's use case and needs.",
+                "props": [
+                  {
+                    "name": "implementation-status",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "implemented"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "enable_authselect"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "accounts_password_set_max_life_root"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "accounts_password_pam_minlen"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "accounts_password_minlen_login_defs"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "accounts_password_pam_ocredit"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "accounts_password_pam_dcredit"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "accounts_password_pam_ucredit"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "accounts_password_pam_lcredit"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "accounts_passwords_pam_faillock_interval"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "accounts_passwords_pam_faillock_deny"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "accounts_passwords_pam_faillock_deny_root"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "accounts_passwords_pam_faillock_unlock_time"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "accounts_password_pam_unix_remember"
+                  }
+                ]
+              },
+              {
+                "uuid": "d49c1bac-be77-473c-853e-4af84bff4ada",
+                "control-id": "r53",
+                "description": "REPLACE_ME",
+                "props": [
+                  {
+                    "name": "implementation-status",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "implemented"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "file_permissions_ungroupowned"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "no_files_unowned_by_user"
+                  }
+                ]
+              },
+              {
+                "uuid": "8b2c9806-f695-42ec-8647-e36fbce3c425",
+                "control-id": "r54",
+                "description": "REPLACE_ME",
+                "props": [
+                  {
+                    "name": "implementation-status",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "implemented"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "dir_perms_world_writable_sticky_bits"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "dir_perms_world_writable_root_owned"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "file_permissions_unauthorized_world_writable"
+                  }
+                ]
+              },
+              {
+                "uuid": "e6154a88-e7f8-4cfe-bcb2-fe6d8120664e",
+                "control-id": "r56",
+                "description": "Only programs specifically designed to be used with setuid or setgid bits can have these privilege bits set. This requirement considers apropriate for setuid and setgid bits the binaries that are installed from recognized and authorized repositories (covered in R15). The remediation resets the sticky bit to intended value by vendor/developer, any finding after remediation should be reviewed.",
+                "props": [
+                  {
+                    "name": "implementation-status",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "implemented"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "file_permissions_unauthorized_suid"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "file_permissions_unauthorized_sgid"
+                  }
+                ]
+              },
+              {
+                "uuid": "3ebd794d-e3b0-45e4-9371-d06eaec4576f",
+                "control-id": "r58",
+                "description": "REPLACE_ME",
+                "props": [
+                  {
+                    "name": "implementation-status",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "alternative",
+                    "remarks": "It is not possible to automatically decide in general way if a package is required or not for given system. As a future improvement, there could be rules assisting assessment by listing the installed packages."
+                  }
+                ]
+              },
+              {
+                "uuid": "98cbf9c2-4853-4988-b1dd-288330fa179b",
+                "control-id": "r59",
+                "description": "It is not trivial to distinguish an official repository from an unofficial one. We cannot draw conclusions from the repo name or URL of the repo (as they can be arbitrary or behind a proxy). One approach to check the origin of installed packages is to check the signature of the packages. If the public key of a repository is not installed, the repo is not trusted.",
+                "props": [
+                  {
+                    "name": "implementation-status",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "implemented"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "ensure_gpgcheck_never_disabled"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "ensure_gpgcheck_globally_activated"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "ensure_gpgcheck_local_packages"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "ensure_redhat_gpgkey_installed"
+                  }
+                ]
+              },
+              {
+                "uuid": "1c3ff9c7-82b5-4525-ba8d-07921a0956f8",
+                "control-id": "r61",
+                "description": "Check the vendor CVE feed and configure automatic install of security related updates.",
+                "props": [
+                  {
+                    "name": "implementation-status",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "implemented"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "security_patches_up_to_date"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "package_dnf-automatic_installed"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "timer_dnf-automatic_enabled"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "dnf-automatic_apply_updates"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "dnf-automatic_security_updates_only"
+                  }
+                ]
+              },
+              {
+                "uuid": "6289a4bd-8aac-479d-bd43-52d22c030545",
+                "control-id": "r62",
+                "description": "REPLACE_ME",
+                "props": [
+                  {
+                    "name": "implementation-status",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "alternative",
+                    "remarks": "Performing a minimal install is a good starting point, but doesn't provide any assurance over any package installed later. Manual review is required to assess if the installed services are minimal. In general, use of obsolete or insecure services is not recommended and we remove some of these in this recommendation."
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "package_dhcp_removed"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "package_sendmail_removed"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "package_telnet_removed"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "package_telnet-server_removed"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "package_tftp_removed"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "package_tftp-server_removed"
+                  }
+                ]
+              },
+              {
+                "uuid": "1ae37b0b-83ca-44a7-922e-7c6621a91afc",
+                "control-id": "r68",
+                "description": "The selection of rules doesn't cover the use of hardware devices to protect the passwords.",
+                "props": [
+                  {
+                    "name": "implementation-status",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "implemented"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "set_password_hashing_algorithm_systemauth"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "accounts_password_pam_unix_rounds_system_auth"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "accounts_password_pam_unix_rounds_password_auth"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "accounts_password_pam_minclass"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "accounts_password_pam_minlen"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "accounts_password_pam_retry"
+                  }
+                ]
+              },
+              {
+                "uuid": "2c3dd9fa-1a31-4cc2-8af9-a84639090850",
+                "control-id": "r80",
+                "description": "REPLACE_ME",
+                "props": [
+                  {
+                    "name": "implementation-status",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "alternative",
+                    "remarks": "Manual review is necessary to decide if the list of resident daemons is minimal. Assisting rules could be created to list sevices listening on the network for manual review."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
