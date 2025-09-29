@@ -2,7 +2,7 @@
 
 _Follow the same guidelines for the other examples in this repository._
 
-<img alt="img_1.png" src="img_1.png" height="200" width="250">
+<img alt="img_1.png" src="img_1.png" height="300" width="400">
 
 ## Expectations
 
