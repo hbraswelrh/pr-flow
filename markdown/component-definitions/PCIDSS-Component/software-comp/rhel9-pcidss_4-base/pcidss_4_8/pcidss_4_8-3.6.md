@@ -10,7 +10,7 @@ x-trestle-global:
   sort-id: pcidss_4_8-03.06
 ---
 
-# pcidss_4_8-3.6 - \[REPLACE_ME\] If Passwords/Passphrases Are Used As Authentication Factors To Meet Requirement 8.3.1, They Meet The Minimum Level Of Complexity.
+# pcidss_4_8-3.6 - \[REPLACE_ME\] If Passwords/Passphrases Are Used As Authentication Factors To Meet Requirement 8.3.1, They Meet The Following Minimum Level Of Complexity.
 
 ## Control Statement
 
@@ -29,6 +29,9 @@ ______________________________________________________________________
 <!-- Note that the list of rules under ### Rules: is read-only and changes will not be captured after assembly to JSON -->
 
 <!-- Add control implementation description here for control: pcidss_4_8-3.6 -->
+
+The system check rules which apply to Requirement 8-3.6 are automated within the base level and documented in Compliance As Code.
+Add context. 
 
 ### Rules:
 
