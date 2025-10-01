@@ -35,6 +35,9 @@ Add context.
 
 Requirement 8-3.6 implements the Guideline: "Entities can consider adding increased complexity by requiring the use of special characters and upper- and lower-case characters, in addition to the minimum standards outlined in the requirement."
 
+I am using the 8.3.1 and 8.3.6 Requirements from the PCI-DSS Standard PDF. 
+
+I am updating the control implementation description for PCI-DSS 4-8.3.6. 
 ### Rules:
 
   - rule-pcidss_4_8-3.6
