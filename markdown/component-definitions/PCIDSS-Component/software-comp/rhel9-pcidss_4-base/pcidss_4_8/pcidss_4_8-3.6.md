@@ -30,14 +30,10 @@ ______________________________________________________________________
 
 <!-- Add control implementation description here for control: pcidss_4_8-3.6 -->
 
-The system check rules which apply to Requirement 8-3.6 are automated within the base level and documented in Compliance As Code.
-Add context. 
+Here is the control implementation description. 
 
-Requirement 8-3.6 implements the Guideline: "Entities can consider adding increased complexity by requiring the use of special characters and upper- and lower-case characters, in addition to the minimum standards outlined in the requirement."
+Additional Context. Elaborate.
 
-I am using the 8.3.1 and 8.3.6 Requirements from the PCI-DSS Standard PDF. 
-
-I am updating the control implementation description for PCI-DSS 4-8.3.6. 
 ### Rules:
 
   - rule-pcidss_4_8-3.6
