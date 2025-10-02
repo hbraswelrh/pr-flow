@@ -31,6 +31,9 @@ ______________________________________________________________________
 <!-- Add control implementation description here for control: pcidss_4_8-3.6 -->
 
 Here is the control implementation description. 
+
+Additional Context. Elaborate.
+
 ### Rules:
 
   - rule-pcidss_4_8-3.6
