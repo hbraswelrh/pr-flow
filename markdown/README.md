@@ -20,3 +20,8 @@ Once making changes, commit those changes using an impactful commit message.
 
 From there, open a Pull Request to propose your changes to the `main` branch.
 
+## Important Notes
+
+When editing the OSCAL Markdown Component Definitions **DO NOT** delete or update the `\[REPLACE_ME\]`. This is equivalent to a control description variable. 
+
+The Markdown Component Definitions can be updated, but are used to translate back to OSCAL format. Therefore, the `\[REPLACE_ME\]` should simply be ignored when editing the Component Definitions. 
