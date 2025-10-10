@@ -1,9 +1,20 @@
 # pr-flow
 
 This repo is a **hands-on sandbox** for practicing the full Pull Request flow:
-1. create a branch, 2. propose changes via PR, 3. review, 4. merge.
+1. Create a branch
+2. Propose changes via PR
+3. Review a PR
+4. Merge a PR
 
-## What you’ll do (check as you go)
+## Recordings to Review
+
+* [Review Video - Working in ComplyTime](https://drive.google.com/file/d/1nP1RmgOMw3BPTtk7w5_3RRzinPjzTy1e/view)
+* [Video Exercise #1 - **Opening a Pull Request**](https://docs.google.com/videos/d/1dQDl79lDld3yunmV2h0eh8gUadw2zOQqcIgQI8Jc-fY/edit?usp=sharing)
+* [Video Exercise #2 - **Reviewing a Pull Request**](https://docs.google.com/videos/d/1R9IkMJWi7x_KkuMKWJSyHKBJKyePsRXT4lrSKAdlY7w/edit?usp=sharing)
+
+
+
+## What you’ll do
 
 - [ ] Read the branching refresher  
 - [ ] Create branch example `pci-dss-v4.0.1`  
