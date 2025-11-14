@@ -2,6 +2,8 @@
 
 This repo is a **hands-on sandbox** for practicing GitFlow with Pull Requests.
 
+> **:rotating_light: Note:** Once you've reached the "Reviewing a PR" step, review [Inviting collaborators to a personal repository](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/repository-access-and-collaboration/inviting-collaborators-to-a-personal-repository). Since you'll be working in a copy of the `pr-flow` repository template, you'll need to add a collaborator that can review your Pull Request.  
+
 ## Recordings to Review 🔎
 
 * [Review Video - Working in ComplyTime](https://drive.google.com/file/d/1nP1RmgOMw3BPTtk7w5_3RRzinPjzTy1e/view)
